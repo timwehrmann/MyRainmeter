@@ -1,20 +1,4 @@
-
-
-;-------------------------------
-
-[time0]
-StringAlign=Center
-StringCase=None
-StringStyle=Normal
-StringEffect=None
-FontEffectColor=0,0,0,20
-FontColor=255,0,0,255
-FontFace=#LocalFontFace#
-FontSize=150
-AntiAlias=1
-ClipString=0
-
-[time1]
+[hours]
 StringAlign=Center
 StringCase=None
 StringStyle=Normal
@@ -26,7 +10,7 @@ FontSize=150
 AntiAlias=1
 ClipString=0
 
-[time2]
+[minutes]
 StringAlign=Center
 StringCase=None
 StringStyle=Normal
@@ -49,7 +33,7 @@ ClipString=0
 
 ;-------------------------------
 
-[Date1]
+[Date]
 StringAlign=Center
 StringCase=None
 StringStyle=Normal
@@ -58,32 +42,6 @@ FontEffectColor=#color2#
 FontColor=#color1#
 FontFace=#LocalFontFace#
 FontSize=25
-AntiAlias=1
-ClipString=0
-
-;-------------------------------
-
-[Sys1]
-StringAlign=right
-StringCase=None
-StringStyle=Normal
-StringEffect=shadow
-FontEffectColor=#color2#
-FontColor=#color1#
-FontFace=#LocalFontFace2#
-FontSize=9
-AntiAlias=1
-ClipString=0
-
-[Sys2]
-StringAlign=left
-StringCase=None
-StringStyle=Normal
-StringEffect=shadow
-FontEffectColor=#color2#
-FontColor=#color1#
-FontFace=#LocalFontFace2#
-FontSize=9
 AntiAlias=1
 ClipString=0
 
