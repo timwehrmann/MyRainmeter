@@ -1,30 +1,56 @@
 [Variables]
 ;-------------------------------
+;-- Variables for the boxes
+;-------------------------------
+; Namings
+NameDrives = Laufwerke
+NameSystemload = Systemauslastung
+NameSysteminformation = Systeminformationen
+NameTemperatures = Temperaturen
+NameUpAndDownstream = Up-/Downstream
+
+; Colors
+TitleColor=255,255,255,180
+LineColor=255,255,255,25
+BoxColor=0,0,0,100
+
+TemperatureCPU=255,0,0,255
+TemperatureGPU=0,255,0,255
+TemperatureMB=0,0,255,255
+TemperatureDrive1=255,255,0,255
+TemperatureDrive2=255,0,255,255
+
+; Font
+FontCase=Upper
+FontStyle=Bold
+
+; Width and Paddings
+FontOffset=3
+BoxOffset=10
+BoxContentWidth=200
+BoxSize=(#BoxContentWidth# + #BoxOffset# * 2)
+
+; Heights
+BoxHeightDrives=(159 + #BoxOffset# * 2)
+BoxHeightSystem=(99 + #BoxOffset# * 2)
+BoxHeightText=(117 + #BoxOffset# * 2)
+BoxHeightNetwork=(125 + #BoxOffset# * 2)
+
+; Temperatures
+minTemp=0
+maxTemp=100
+;-------------------------------
+
+
+
+;-------------------------------
+;-- Variables for clock and date
+;-------------------------------
 LocalFontFace=ITC Avant Garde Pro XLt
 LocalFontFace2=ITC Avant Garde Pro Bk
 ;-------------------------------
-PrimaryColor1=255,255,255,204
-PrimaryColor2=0,0,0,20
-PrimaryColor3=99CC00
-
-BackgroundColor1=0,0,0,100
-BackgroundColor2=0,0,0,100
-BackgroundColor3=0,0,0,100
-
-Color1=255,255,255,204
 Color2=0,0,0,20
-Color3=99CC00
 Color4=0,0,0,100
-;-------------------------------
-BoxHeightDrives=374
-BoxHeightSystem=359
-BoxHeight=128
-BoxWidth=220
-BoxOffset=10
-;-------------------------------
-Player=WMP
-;-------------------------------
-Hours=%H
 ;-------------------------------
 January=Januar
 February=Februar
@@ -46,12 +72,4 @@ Thursday=Donnerstag
 Friday=Freitag
 Saturday=Samstag
 Sunday=Sonntag
-;-------------------------------
-Monday2=Montag
-Tuesday2=Dienstag
-Wednesday2=Mittwoch
-Thursday2=Donnerstag
-Friday2=Freitag
-Saturday2=Samstag
-Sunday2=Sonntag
 ;-------------------------------

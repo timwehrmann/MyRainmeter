@@ -1,23 +1,9 @@
-[hours]
+[time]
 StringAlign=Center
 StringCase=None
 StringStyle=Normal
 StringEffect=None
 FontEffectColor=0,0,0,20
-// FontColor=#color1#
-FontColor=#color4#
-FontFace=#LocalFontFace#
-FontSize=150
-AntiAlias=1
-ClipString=0
-
-[minutes]
-StringAlign=Center
-StringCase=None
-StringStyle=Normal
-StringEffect=None
-FontEffectColor=0,0,0,20
-// FontColor=#color3#
 FontColor=#color4#
 FontFace=#LocalFontFace#
 FontSize=150
@@ -41,7 +27,6 @@ StringCase=None
 StringStyle=Normal
 StringEffect=shadow
 FontEffectColor=#color2#
-// FontColor=#color1#
 FontColor=#color4#
 FontFace=#LocalFontFace#
 FontSize=25
@@ -62,28 +47,24 @@ ClipString=0
 
 ;-------------------------------
 
-[playerbuttons]
-StringAlign=Center
-StringCase=None
-StringStyle=Normal
-StringEffect=None
-FontEffectColor=0,0,0,20
-FontColor=#color1#
-FontFace=Webdings
-FontSize=13
-AntiAlias=1
-ClipString=0
+[MyRainmeterTitleString]
+X=0
+Y=20r
+W=#ColTotalWidth#
+H=#BoxHeight#
+FontFace=#Font#
+FontSize=#FontHeight#
+FontColor=#TitleColor#
+StringStyle=Bold
+AntiAlias=#AntiA#
+UpdateDivider=-1
 
-[playerbuttons2]
-StringAlign=Center
-StringCase=None
-StringStyle=Normal
-StringEffect=Border
-FontEffectColor=#color4#
-FontColor=255,255,255,255
-FontFace=Webdings
-FontSize=13
-AntiAlias=1
-ClipString=0
-
-;-------------------------------
+[MyRainmeterDataString]
+StringAlign=Right
+X=#ColTotalWidth#
+Y=0r
+FontFace=#Font#
+FontColor=#DataColor#
+FontSize=#FontHeight#
+AntiAlias=#AntiA#
+Text="%1 °C"
