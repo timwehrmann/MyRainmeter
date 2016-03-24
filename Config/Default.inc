@@ -10,11 +10,11 @@ NameTemperatures = Temperaturen
 NameUpAndDownstream = Up-/Downstream
 
 ; Colors
-TitleColor=255,255,255,180
+TitleColor=255,255,255,100
 LineColor=255,255,255,25
 BoxColor=0,0,0,100
-TemperatureGPU=228,167,100,255
-TemperatureCPU=255,239,143,255
+TemperatureGPU=255,239,143,255
+TemperatureCPU=228,167,100,255
 
 ; Font
 FontCase=Upper
