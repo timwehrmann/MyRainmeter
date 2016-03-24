@@ -13,12 +13,8 @@ NameUpAndDownstream = Up-/Downstream
 TitleColor=255,255,255,180
 LineColor=255,255,255,25
 BoxColor=0,0,0,100
-
-TemperatureCPU=255,0,0,255
-TemperatureGPU=0,255,0,255
-TemperatureMB=0,0,255,255
-TemperatureDrive1=255,255,0,255
-TemperatureDrive2=255,0,255,255
+TemperatureGPU=228,167,100,255
+TemperatureCPU=255,239,143,255
 
 ; Font
 FontCase=Upper
@@ -32,8 +28,9 @@ BoxSize=(#BoxContentWidth# + #BoxOffset# * 2)
 
 ; Heights
 BoxHeightDrives=(159 + #BoxOffset# * 2)
-BoxHeightSystem=(99 + #BoxOffset# * 2)
-BoxHeightText=(117 + #BoxOffset# * 2)
+BoxHeightSystem=(73 + #BoxOffset# * 2)
+BoxHeightText=(118 + #BoxOffset# * 2)
+BoxHeightTemperature=(179 + #BoxOffset# * 2)
 BoxHeightNetwork=(125 + #BoxOffset# * 2)
 
 ; Temperatures

@@ -67,4 +67,4 @@ FontFace=#Font#
 FontColor=#DataColor#
 FontSize=#FontHeight#
 AntiAlias=#AntiA#
-Text="%1 °C"
+Text="%1°C"
