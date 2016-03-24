@@ -14,6 +14,7 @@ BackgroundColor3=0,0,0,100
 Color1=255,255,255,204
 Color2=0,0,0,20
 Color3=99CC00
+Color4=0,0,0,100
 ;-------------------------------
 BoxHeightDrives=374
 BoxHeightSystem=359
@@ -27,7 +28,7 @@ Hours=%H
 ;-------------------------------
 January=Januar
 February=Februar
-March=März
+March=Marz
 April=April
 May=May
 June=Juni
