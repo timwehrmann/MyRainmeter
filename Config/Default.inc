@@ -15,6 +15,9 @@ LineColor=255,255,255,25
 BoxColor=0,0,0,100
 TemperatureGPU=255,239,143,255
 TemperatureCPU=228,167,100,255
+TemperatureMainboard=144,215,91,255
+TemperatureSSD=91,215,193,255
+TemperatureHDD=170,91,215,255
 
 ; Font
 FontCase=Upper
