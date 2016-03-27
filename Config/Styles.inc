@@ -54,8 +54,8 @@ Y=0
 W=#BoxSize#
 
 [MyRainmeterBoxSeperator]
-X=#BoxOffset#
-Y=(#BoxOffset#*2+#FontHeight#)
+X=#BoxPadding#
+Y=(#BoxPadding#*2+#FontSize#)
 H=1
 W=#BoxContentWidth#
 LineCount=1
@@ -64,11 +64,11 @@ LineColor=#LineColor#
 AntiAlias=0
 
 [MyRainmeterBoxTitleString]
-X=(#BoxContentWidth#/2 + #BoxOffset#)
-Y=(#BoxOffset# - #FontOffset#)
+X=(#BoxContentWidth#/2 + #BoxPadding#)
+Y=(#BoxPadding# - #FontOffset#)
 W=#BoxContentWidth#
 FontFace=#Font#
-FontSize=#FontHeight#
+FontSize=#FontSize#
 FontColor=#BoxTitleColor#
 StringAlign=Center
 StringStyle=#FontStyle#

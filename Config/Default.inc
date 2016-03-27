@@ -4,8 +4,8 @@
 ;-------------------------------
 
 ; SpeedFan IDs
-Drive1 = #SSD1#
-Drive2 = #HDD1#
+Drive1 = #SSD1# ; TODO Implement switch
+Drive2 = #HDD1# ; TODO Implement switch
 
 ; Namings
 NameDrives = Laufwerke
@@ -18,8 +18,6 @@ NameUpAndDownstream = Up-/Downstream
 TextColor = 255,0,0,100
 LineColor = 255,255,255,25
 BoxTitleColor = 255,255,255,255
-
-
 BoxColor=0,0,0,100
 TemperatureDefault=255,255,255,100
 Temperature1=255,239,143,255
@@ -29,18 +27,16 @@ Temperature4=91,215,193,255
 Temperature5=170,91,215,255
 
 ; Font
-FontSize = (#FontHeight# > 0 ? #FontHeight# : 16)
+FontSize = (#FontHeight# > 0 ? #FontHeight# : 8)
 FontCase = Upper
 FontStyle = Bold
-FontColorDefault = (#DataColor# <> #NotDefined# ? #DataColor# : #TextColor#)
-FontFamily = (#Font# > 0 ? #Font# : Myriad Pro)
+FontColorDefault = #DataColor#  ; TODO Implement switch
+FontFamily = #Font#             ; TODO Implement switch
 
-; Width and Paddings
+; General widths and heights
 FontOffset=3
-BoxOffset=10
+BoxPadding=10
 BoxContentWidth=200
-BoxSize=(#BoxContentWidth# + #BoxOffset# * 2)
-BoxTitleHeight = (#FontSize# + #BoxOffset# + 1 + #BoxOffset#)
 
 ; Graph settings
 GraphHeight = 50
@@ -51,16 +47,18 @@ GraphLabelOffsetSmall = 3
 ; Bar settings
 BarHeight = 18
 
-; Temperatures
+; Temperatures min and max values
 minTemp=20
 maxTemp=72
 
-; Heights
-BoxHeightDrives=(#BoxOffset# * 2 + #BoxTitleHeight# + (#GraphHeight# + #BarHeight#) * 2)
-BoxHeightSystem=(73 + #BoxOffset# * 2)
-BoxHeightText=(118 + #BoxOffset# * 2)
-BoxHeightTemperature=(179 + #BoxOffset# * 2)
-BoxHeightNetwork=(125 + #BoxOffset# * 2)
+; Box settings
+BoxSize=(#BoxContentWidth# + #BoxPadding# * 2)
+BoxTitleHeight = (#FontSize# + #BoxPadding# + 1)
+BoxHeightDrives=(#BoxPadding# * 2 + #BoxTitleHeight# + (#GraphHeightSmall# + #BarHeight# + #BoxPadding#) * 2)
+BoxHeightSystem=(#BoxPadding# * 2 + 73)
+BoxHeightText=(#BoxPadding# * 2 + 118)
+BoxHeightTemperature=(#BoxPadding# * 2 + 179)
+BoxHeightNetwork=(#BoxPadding# * 2 + 125)
 ;-------------------------------
 
 
