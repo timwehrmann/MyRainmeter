@@ -4,8 +4,10 @@
 ;-------------------------------
 
 ; SpeedFan IDs
+;
 Drive1 = #SSD1#
 ; TODO Implement switch
+;
 Drive2 = #HDD1#
 ; TODO Implement switch
 
@@ -17,10 +19,12 @@ NameTemperatures = Temperaturen
 NameUpAndDownstream = Up-/Downstream
 
 ; General colors
-TextColor = 255,0,0,100
+; TODO: Implement SysInfo Switch for TitleColor and TextColor
+TitleColor = 255,255,255,140
+TextColor = 255,255,255,100
 LineColor = 255,255,255,25
 BoxTitleColor = 255,255,255,255
-BoxColor=0,0,0,100
+BoxBackgroundColor=0,0,0,100
 TemperatureDefault=255,255,255,100
 Temperature1=255,239,143,255
 Temperature2=228,167,100,255
@@ -29,13 +33,11 @@ Temperature4=91,215,193,255
 Temperature5=170,91,215,255
 
 ; Font
-FontSize = (#FontHeight# > 0 ? #FontHeight# : 8)
-FontCase = Upper
-FontStyle = Bold
-FontColorDefault = #DataColor#
-; TODO Implement switch
+; TODO: Implement SysInfo Switch for FontFamily
 FontFamily = #Font#
-; TODO Implement switch
+FontSize = (#FontHeight# > 0 ? #FontHeight# : 8)
+TitleFontCase = Upper
+TitleFontStyle = Bold
 
 ; General widths and heights
 FontOffset=3
