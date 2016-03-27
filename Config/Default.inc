@@ -4,8 +4,10 @@
 ;-------------------------------
 
 ; SpeedFan IDs
-Drive1 = #SSD1# ; TODO Implement switch
-Drive2 = #HDD1# ; TODO Implement switch
+Drive1 = #SSD1#
+; TODO Implement switch
+Drive2 = #HDD1#
+; TODO Implement switch
 
 ; Namings
 NameDrives = Laufwerke
@@ -30,8 +32,10 @@ Temperature5=170,91,215,255
 FontSize = (#FontHeight# > 0 ? #FontHeight# : 8)
 FontCase = Upper
 FontStyle = Bold
-FontColorDefault = #DataColor#  ; TODO Implement switch
-FontFamily = #Font#             ; TODO Implement switch
+FontColorDefault = #DataColor#
+; TODO Implement switch
+FontFamily = #Font#
+; TODO Implement switch
 
 ; General widths and heights
 FontOffset=3
@@ -40,9 +44,7 @@ BoxContentWidth=200
 
 ; Graph settings
 GraphHeight = 50
-GraphLabelOffset = 9
 GraphHeightSmall = 42
-GraphLabelOffsetSmall = 3
 
 ; Bar settings
 BarHeight = 18
@@ -53,12 +55,12 @@ maxTemp=72
 
 ; Box settings
 BoxSize=(#BoxContentWidth# + #BoxPadding# * 2)
-BoxTitleHeight = (#FontSize# + #BoxPadding# + 1)
-BoxHeightDrives=(#BoxPadding# * 2 + #BoxTitleHeight# + (#GraphHeightSmall# + #BarHeight# + #BoxPadding#) * 2)
-BoxHeightSystem=(#BoxPadding# * 2 + 73)
-BoxHeightText=(#BoxPadding# * 2 + 118)
-BoxHeightTemperature=(#BoxPadding# * 2 + 179)
-BoxHeightNetwork=(#BoxPadding# * 2 + 125)
+BoxPaddingWithTitle = (#BoxPadding# * 2 + #FontSize# + #BoxPadding# + 1)
+BoxHeightDrives=(#BoxPaddingWithTitle# + (#BoxPadding# + #GraphHeightSmall# + #BarHeight#) * 2)
+BoxHeightSystem=(#BoxPaddingWithTitle# + (#BoxPadding# + #BarHeight#) * 2)
+BoxHeightText=(#BoxPaddingWithTitle# + (#BoxPadding# + #FontSize#) * 5)
+BoxHeightTemperature=(#BoxPaddingWithTitle# + #BoxPadding# + #GraphHeight# + (#BoxPadding# + #FontSize#) * 5)
+BoxHeightNetwork=(#BoxPaddingWithTitle# + 106)
 ;-------------------------------
 
 

@@ -77,7 +77,7 @@ AntiAlias=1
 
 [MyRainmeterTitleString]
 X=0
-Y=20r
+Y=(#FontSize# + #BoxPadding#)r
 W=#BoxContentWidth#
 H=#BoxHeight#
 FontFace=#Font#
