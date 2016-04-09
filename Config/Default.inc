@@ -7,16 +7,23 @@
 ;
 Drive1 = #SSD1#
 ; TODO Implement switch
-;
 Drive2 = #HDD1#
 ; TODO Implement switch
+
+; Networks
+SpeedTestDL=91.77
+SpeedTestUL=33.31
+NetAVG=4
+FastNet=100
 
 ; Namings
 NameDrives = Laufwerke
 NameSystemload = Systemauslastung
 NameSysteminformation = Systeminformationen
 NameTemperatures = Temperaturen
-NameUpAndDownstream = Up-/Downstream
+NameUpAndDownstream = Netzwerkauslastung
+NameDownstream=Downstream
+NameUpstream=Upstream
 
 ; General colors
 ; TODO: Implement SysInfo Switch for TitleColor and TextColor
@@ -50,6 +57,7 @@ GraphHeightSmall = 42
 
 ; Bar settings
 BarHeight = 18
+BarPadding = 3
 
 ; Temperatures min and max values
 minTemp=20
@@ -62,7 +70,7 @@ BoxHeightDrives=(#BoxPaddingWithTitle# + (#BoxPadding# + #GraphHeightSmall# + #B
 BoxHeightSystem=(#BoxPaddingWithTitle# + (#BoxPadding# + #BarHeight#) * 2)
 BoxHeightText=(#BoxPaddingWithTitle# + (#BoxPadding# + #FontSize#) * 5)
 BoxHeightTemperature=(#BoxPaddingWithTitle# + #BoxPadding# + #GraphHeight# + (#BoxPadding# + #FontSize#) * 5)
-BoxHeightNetwork=(#BoxPaddingWithTitle# + 106)
+BoxHeightNetwork=(#BoxPaddingWithTitle# + (#BoxPadding# + #GraphHeightSmall# + #BarHeight#) * 2)
 ;-------------------------------
 
 
