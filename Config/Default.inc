@@ -34,8 +34,8 @@ Temperature5 = 170,91,215,255
 
 ; Font
 ; TODO: Implement SysInfo Switch for FontFamily
-LocalFontFace=ITC Avant Garde Pro XLt
-LocalFontFace2=ITC Avant Garde Pro Bk
+FontFamilyDate=ITC Avant Garde Pro XLt
+FontFamilyClock=ITC Avant Garde Pro Bk
 FontFamily = #Font#
 FontSize = (#FontHeight# > 0 ? #FontHeight# : 8)
 TitleFontCase = Upper
