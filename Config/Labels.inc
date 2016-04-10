@@ -1,11 +1,13 @@
 [Variables]
-NameDrives = Laufwerke
-NameSystemload = Systemauslastung
-NameSysteminformation = Systeminformationen
-NameTemperatures = Temperaturen
-NameUpAndDownstream = Netzwerkauslastung
-NameDownstream=Downstream
-NameUpstream=Upstream
+BoxTitleTitleDrives = Laufwerke
+BoxTitleTitleSystemload = Systemauslastung
+BoxTitleSystemInformation = Systeminformationen
+BoxTitleTemperatures = Temperaturen
+BoxTitleNetworkLoad = Netzwerkauslastung
+LabelProcessor=Prozessor
+LabelRam=Ram
+LabelDownstream=Downstream
+LabelUpstream=Upstream
 
 
 January=Januar
