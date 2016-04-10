@@ -43,8 +43,10 @@ TitleFontStyle = Bold
 
 ; General widths and heights
 FontOffset=3
+BoldOffset=1
 BoxPadding=10
 BoxContentWidth=200
+DisplayToDisplayMargin=#BoxPadding#
 
 ; Graph settings
 GraphHeight = 50

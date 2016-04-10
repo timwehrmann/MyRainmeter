@@ -88,8 +88,13 @@ UpdateDivider=-1
 
 [MyRainmeterTitleStringGraphTopCentered]
 X=(#BoxContentWidth# / 2)
-Y=(#FontOffset# - 1)
+Y=(#FontOffset# - #BoldOffset#)
 StringAlign=Center
+
+[MyRainmeterTitleStringBarLeft]
+X=#BarPadding#
+Y=(#BarPadding# - #BoldOffset#)r
+StringAlign=Left
 
 [MyRainmeterDataString]
 X=#BoxContentWidth#
@@ -104,7 +109,7 @@ AutoScale=1
 
 [MyRainmeterDataStringBarLeft]
 X=#BarPadding#
-Y=#FontOffset#r
+Y=#BarPadding#r
 StringAlign=Left
 
 [MyRainmeterDataStringBarRight]
