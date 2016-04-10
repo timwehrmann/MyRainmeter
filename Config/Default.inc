@@ -47,6 +47,7 @@ FontOffset=3
 BoldOffset=1
 BoxPadding=10
 BoxContentWidth=200
+BoxToBoxMargin=(#BoxPadding# + 5)
 DisplayToDisplayMargin=#BoxPadding#
 
 ; Graph settings

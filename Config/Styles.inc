@@ -48,22 +48,12 @@ ClipString=0
 [MyRainmeterBoxBackground]
 SolidColor=#BoxBackgroundColor#
 X=0
-Y=0
+Y=#BoxToBoxMargin#
 W=#BoxSize#
-
-[MyRainmeterBoxSeperator]
-X=#BoxPadding#
-Y=(#BoxPadding#*2+#FontSize#)
-H=1
-W=#BoxContentWidth#
-LineCount=1
-LineWidth=1
-LineColor=#LineColor#
-AntiAlias=0
 
 [MyRainmeterBoxTitleString]
 X=(#BoxContentWidth#/2 + #BoxPadding#)
-Y=(#BoxPadding# - #FontOffset#)
+Y=(#BoxPadding# - #FontOffset# + #BoxToBoxMargin#)
 W=#BoxContentWidth#
 FontFace=#FontFamily#
 FontSize=#FontSize#
@@ -72,6 +62,16 @@ StringAlign=Center
 StringStyle=#TitleFontStyle#
 StringCase=#TitleFontCase#
 AntiAlias=1
+
+[MyRainmeterBoxSeperator]
+X=#BoxPadding#
+Y=(#BoxPadding# * 2 + #FontSize# + #BoxToBoxMargin#)
+H=1
+W=#BoxContentWidth#
+LineCount=1
+LineWidth=1
+LineColor=#LineColor#
+AntiAlias=0
 
 ;-------------------------------
 
@@ -124,6 +124,13 @@ Y=0r
 StringAlign=Right
 
 ;-------------------------------
+
+[MyRainmeterBoxToBoxMargin]
+SolidColor=#DebugColor#
+X=0
+Y=0
+W=#BoxSize#
+H=#BoxToBoxMargin#
 
 [MyRainmeterDisplayToDisplayMargin]
 SolidColor=#DebugColor#
