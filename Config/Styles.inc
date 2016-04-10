@@ -75,12 +75,11 @@ AntiAlias=1
 
 ;-------------------------------
 
-[MyRainmeterLabelBox]
-SolidColor=#BoxBackgroundColor#
+[MyRainmeterTextDisplayContainer]
 X=0
-Y=0
+Y=(#DisplayToDisplayMargin# - #FontOffset# * 2)
 W=#BoxContentWidth#
-H=(#DisplayToDisplayMargin# + #FontSize#)
+H=(#FontSize#)
 
 [MyRainmeterTitleString]
 X=0
@@ -95,7 +94,7 @@ UpdateDivider=-1
 
 [MyRainmeterTitleStringGraphTopCentered]
 X=(#BoxContentWidth# / 2)
-Y=(#FontOffset# - #BoldOffset#)
+Y=(#DisplayToDisplayMargin# + #FontOffset# - #BoldOffset#)
 StringAlign=Center
 
 [MyRainmeterTitleStringBarLeft]
@@ -126,9 +125,16 @@ StringAlign=Right
 
 ;-------------------------------
 
+[MyRainmeterDisplayToDisplayMargin]
+SolidColor=#DebugColor#
+X=0
+Y=0
+W=#BoxContentWidth#
+H=#DisplayToDisplayMargin#
+
 [MyRainmeterGraph]
 X=0
-Y=0r
+Y=#DisplayToDisplayMargin#r
 H=#GraphHeightSmall#
 W=#BoxContentWidth#
 GraphStart=#Direction#
@@ -142,7 +148,7 @@ DynamicVariables=1
 
 [MyRainmeterBar]
 X=0
-Y=0
+Y=#DisplayToDisplayMargin#r
 H=#BarHeight#
 W=#BoxContentWidth#
 BarColor=#BarFrontColor#

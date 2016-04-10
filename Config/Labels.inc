@@ -9,6 +9,10 @@ LabelRam=Ram
 LabelDownstream=Downstream
 LabelUpstream=Upstream
 LabelClock=Uhrzeit
+LabelUptime=Hochgefahren seit
+LabelInternalIP=Interne IP
+LabelExternalIP=Externe IP
+LabelPing=Aktueller Ping
 
 January=Januar
 February=Februar
