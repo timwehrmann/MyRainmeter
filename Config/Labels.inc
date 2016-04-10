@@ -8,7 +8,7 @@ LabelProcessor=Prozessor
 LabelRam=Ram
 LabelDownstream=Downstream
 LabelUpstream=Upstream
-
+LabelClock=Uhrzeit
 
 January=Januar
 February=Februar

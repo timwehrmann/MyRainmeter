@@ -75,6 +75,13 @@ AntiAlias=1
 
 ;-------------------------------
 
+[MyRainmeterLabelBox]
+SolidColor=#BoxBackgroundColor#
+X=0
+Y=0
+W=#BoxContentWidth#
+H=(#DisplayToDisplayMargin# + #FontSize#)
+
 [MyRainmeterTitleString]
 X=0
 Y=0r
