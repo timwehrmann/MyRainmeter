@@ -16,31 +16,26 @@ SpeedTestUL=33.31
 NetAVG=4
 FastNet=100
 
-; Namings
-NameDrives = Laufwerke
-NameSystemload = Systemauslastung
-NameSysteminformation = Systeminformationen
-NameTemperatures = Temperaturen
-NameUpAndDownstream = Netzwerkauslastung
-NameDownstream=Downstream
-NameUpstream=Upstream
-
 ; General colors
 ; TODO: Implement SysInfo Switch for TitleColor and TextColor
+ClockColor = 0,0,0,100
+ClockShadowColor = 0,0,0,20
 TitleColor = 255,255,255,140
 TextColor = 255,255,255,100
 LineColor = 255,255,255,25
 BoxTitleColor = 255,255,255,255
-BoxBackgroundColor=0,0,0,100
-TemperatureDefault=255,255,255,100
-Temperature1=255,239,143,255
-Temperature2=228,167,100,255
-Temperature3=144,215,91,255
-Temperature4=91,215,193,255
-Temperature5=170,91,215,255
+BoxBackgroundColor = 0,0,0,100
+TemperatureDefault = 255,255,255,100
+Temperature1 = 255,239,143,255
+Temperature2 = 228,167,100,255
+Temperature3 = 144,215,91,255
+Temperature4 = 91,215,193,255
+Temperature5 = 170,91,215,255
 
 ; Font
 ; TODO: Implement SysInfo Switch for FontFamily
+LocalFontFace=ITC Avant Garde Pro XLt
+LocalFontFace2=ITC Avant Garde Pro Bk
 FontFamily = #Font#
 FontSize = (#FontHeight# > 0 ? #FontHeight# : 8)
 TitleFontCase = Upper
@@ -71,37 +66,3 @@ BoxHeightSystem=(#BoxPaddingWithTitle# + (#BoxPadding# + #BarHeight#) * 2)
 BoxHeightText=(#BoxPaddingWithTitle# + (#BoxPadding# + #FontSize#) * 5)
 BoxHeightTemperature=(#BoxPaddingWithTitle# + #BoxPadding# + #GraphHeight# + (#BoxPadding# + #FontSize#) * 5)
 BoxHeightNetwork=(#BoxPaddingWithTitle# + (#BoxPadding# + #GraphHeightSmall# + #BarHeight#) * 2)
-;-------------------------------
-
-
-
-;-------------------------------
-;-- Variables for clock and date
-;-------------------------------
-LocalFontFace=ITC Avant Garde Pro XLt
-LocalFontFace2=ITC Avant Garde Pro Bk
-;-------------------------------
-Color2=0,0,0,20
-Color4=0,0,0,100
-;-------------------------------
-January=Januar
-February=Februar
-March=Marz
-April=April
-May=May
-June=Juni
-July=Juli
-August=August
-September=September
-October=Oktober
-November=November
-December=Dezember
-;-------------------------------
-Monday=Montag
-Tuesday=Dienstag
-Wednesday=Mittwoch
-Thursday=Donnerstag
-Friday=Freitag
-Saturday=Samstag
-Sunday=Sonntag
-;-------------------------------
