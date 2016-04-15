@@ -11,7 +11,7 @@ Drive2 = #HDD1#
 ; TODO Implement switch
 
 ; Networks
-SpeedTestDL=91.77
+SpeedTestDL=94.4
 SpeedTestUL=33.31
 NetAVG=4
 FastNet=100
