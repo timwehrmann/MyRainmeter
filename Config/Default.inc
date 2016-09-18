@@ -4,11 +4,8 @@
 ;-------------------------------
 
 ; SpeedFan IDs
-;
-Drive1 = #SSD1#
-; TODO Implement switch
-Drive2 = #HDD1#
-; TODO Implement switch
+Drive1 = C:
+Drive2 = D:
 
 ; Networks
 SpeedTestDL=94.4
@@ -17,12 +14,14 @@ NetAVG=4
 FastNet=100
 
 ; General colors
-; TODO: Implement SysInfo Switch for TitleColor and TextColor
 ClockColor = 0,0,0,100
 ClockShadowColor = 0,0,0,20
 TitleColor = 255,255,255,140
 TextColor = 255,255,255,100
 LineColor = 255,255,255,25
+BarActiveColor=255,255,255,60
+BarBackColor = 255,255,255,40
+GraphBackColor = 255,255,255,20
 BoxTitleColor = 255,255,255,255
 BoxBackgroundColor = 0,0,0,100
 TemperatureDefault = 255,255,255,100
@@ -31,16 +30,17 @@ Temperature2 = 228,167,100,255
 Temperature3 = 144,215,91,255
 Temperature4 = 91,215,193,255
 Temperature5 = 170,91,215,255
-DebugColor = 255,0,0,0
+DebugColor = 255,0,0,100
 
 ; Font
-; TODO: Implement SysInfo Switch for FontFamily
 FontFamilyDate=ITC Avant Garde Pro XLt
 FontFamilyClock=ITC Avant Garde Pro Bk
-FontFamily = #Font#
+FontFamily = Myriad Pro
+FontHeight = 8
 FontSize = (#FontHeight# > 0 ? #FontHeight# : 8)
 TitleFontCase = Upper
 TitleFontStyle = Bold
+AntiAlias=1
 
 ; General widths and heights
 FontOffset=3
@@ -59,8 +59,13 @@ BarHeight = 18
 BarPadding = 3
 
 ; Temperatures min and max values
-minTemp=20
-maxTemp=72
+minTemp=0
+maxTemp=80
+TempSensorGraphics=0
+TempSensorCPU=9
+TempSensorSystem=1
+TempSensorDrive1=7
+TempSensorDrive2=8
 
 ; Box settings
 BoxSize=(#BoxContentWidth# + #BoxPadding# * 2)
