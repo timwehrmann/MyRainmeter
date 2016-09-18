@@ -77,9 +77,9 @@ AntiAlias=0
 
 [MyRainmeterTextDisplayContainer]
 X=0
-Y=(#DisplayToDisplayMargin# - #FontOffset# * 2)
+Y=(#DisplayToDisplayMargin# - #FontOffset# * 2) + #FontOffset#
 W=#BoxContentWidth#
-H=(#FontSize#)
+H=0
 
 [MyRainmeterTitleString]
 X=0
