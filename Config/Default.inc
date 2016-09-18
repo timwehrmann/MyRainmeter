@@ -51,7 +51,7 @@ BoxToBoxMargin=(#BoxPadding# + 5)
 DisplayToDisplayMargin=#BoxPadding#
 
 ; Graph settings
-GraphHeight = 50
+GraphHeight = 100
 GraphHeightSmall = 42
 
 ; Bar settings
