@@ -30,7 +30,7 @@ Temperature2 = 228,167,100,255
 Temperature3 = 144,215,91,255
 Temperature4 = 91,215,193,255
 Temperature5 = 170,91,215,255
-DebugColor = 255,0,0,100
+DebugColor = 255,0,0,0
 
 ; Font
 FontFamilyDate=ITC Avant Garde Pro XLt
