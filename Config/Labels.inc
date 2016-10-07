@@ -1,0 +1,35 @@
+[Variables]
+BoxTitleTitleDrives = Laufwerke
+BoxTitleTitleSystemload = Systemauslastung
+BoxTitleSystemInformation = Systeminformationen
+BoxTitleTemperatures = Temperaturen
+BoxTitleNetworkLoad = Netzwerkauslastung
+LabelProcessor=Prozessor
+LabelRam=Ram
+LabelDownstream=Downstream
+LabelUpstream=Upstream
+LabelClock=Uhrzeit
+LabelUptime=Hochgefahren seit
+LabelInternalIP=Interne IP
+LabelExternalIP=Externe IP
+LabelPing=Aktueller Ping
+
+January=Januar
+February=Februar
+March=Marz
+April=April
+May=May
+June=Juni
+July=Juli
+August=August
+September=September
+October=Oktober
+November=November
+December=Dezember
+Monday=Montag
+Tuesday=Dienstag
+Wednesday=Mittwoch
+Thursday=Donnerstag
+Friday=Freitag
+Saturday=Samstag
+Sunday=Sonntag
