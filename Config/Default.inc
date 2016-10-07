@@ -22,6 +22,7 @@ LineColor = 255,255,255,25
 BarActiveColor=255,255,255,60
 BarBackColor = 255,255,255,40
 GraphBackColor = 255,255,255,20
+GraphSeparatorColor = 255,255,255,64
 BoxTitleColor = 255,255,255,255
 BoxBackgroundColor = 0,0,0,100
 TemperatureDefault = 255,255,255,100
