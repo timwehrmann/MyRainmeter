@@ -44,20 +44,20 @@ TitleFontStyle = Bold
 AntiAlias=1
 
 ; General widths and heights
-FontOffset=3
-BoldOffset=1
-BoxPadding=10
-BoxContentWidth=200
-BoxToBoxMargin=(#BoxPadding# + 5)
-DisplayToDisplayMargin=#BoxPadding#
+FontOffset = 3
+BoldOffset = 1
+BoxPadding = 10
+BoxContentWidth = 240
+BoxToBoxMargin = (#BoxPadding# + 5)
+DisplayToDisplayMargin = #BoxPadding#
 
 ; Graph settings
-GraphHeight = 100
-GraphHeightSmall = 42
+GraphHeight = 128
+GraphHeightSmall = 64
 
 ; Bar settings
-BarHeight = 18
-BarPadding = 3
+BarHeight = 20
+BarPadding = 4
 
 ; Temperatures min and max values
 minTemp=0
