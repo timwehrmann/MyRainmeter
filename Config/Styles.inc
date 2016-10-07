@@ -161,3 +161,24 @@ W=#BoxContentWidth#
 BarColor=#BarActiveColor#
 SolidColor=#BarBackColor#
 BarOrientation=Horizontal
+
+;-------------------------------
+
+[MyRainmeterOrientationLine]
+X=0
+Y=(#GraphHeight# * 0.25)r
+H=1
+W=#BoxContentWidth#
+SolidColor=#GraphSeparatorColor#
+
+[MyRainmeterOrientationTitle]
+X=#BoxContentWidth#
+Y=0r
+W=#BoxContentWidth#
+FontFace=#FontFamily#
+FontSize=#FontSize#
+FontColor=#GraphSeparatorColor#
+AntiAlias=1
+StringAlign=Right
+StringCase=#TitleFontCase#
+UpdateDivider=-1
