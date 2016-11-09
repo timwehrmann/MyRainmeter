@@ -54,11 +54,11 @@ BoxToBoxMargin = (#BoxPadding# + 5)
 DisplayToDisplayMargin = #BoxPadding#
 
 ; Graph settings
-GraphHeight = 128
-GraphHeightSmall = 64
+GraphHeight = 124
+GraphHeightSmall = 44
 
 ; Bar settings
-BarHeight = 20
+BarHeight = 19
 BarPadding = 4
 
 ; Temperatures min and max values
@@ -74,7 +74,7 @@ TempSensorDrive3=13
 ; Box settings
 BoxSize=(#BoxContentWidth# + #BoxPadding# * 2)
 BoxPaddingWithTitle = (#BoxPadding# * 2 + #FontSize# + #BoxPadding# + 1)
-BoxHeightDrives=(#BoxPaddingWithTitle# + (#BoxPadding# + #GraphHeightSmall# + #BarHeight#) * 2)
+BoxHeightDrives=(#BoxPaddingWithTitle# + (#BoxPadding# + #GraphHeightSmall# + #BarHeight#) * 3)
 BoxHeightSystem=(#BoxPaddingWithTitle# + (#BoxPadding# + #BarHeight#) * 2)
 BoxHeightText=(#BoxPaddingWithTitle# + (#BoxPadding# + #FontSize#) * 5)
 BoxHeightNetwork=(#BoxPaddingWithTitle# + (#BoxPadding# + #GraphHeightSmall# + #BarHeight#) * 2)
