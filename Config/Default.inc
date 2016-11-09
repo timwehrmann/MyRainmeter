@@ -6,6 +6,7 @@
 ; SpeedFan IDs
 Drive1 = C:
 Drive2 = D:
+Drive3 = E:
 
 ; Networks
 SpeedTestDL=94.4
@@ -26,11 +27,12 @@ GraphSeparatorColor = 255,255,255,64
 BoxTitleColor = 255,255,255,255
 BoxBackgroundColor = 0,0,0,100
 TemperatureDefault = 255,255,255,100
-Temperature1 = 255,239,143,255
-Temperature2 = 228,167,100,255
-Temperature3 = 144,215,91,255
-Temperature4 = 91,215,193,255
-Temperature5 = 170,91,215,255
+Temperature1 = 255,199,143,255
+Temperature2 = 199,255,143,255
+Temperature3 = 143,255,199,255
+Temperature4 = 143,199,255,255
+Temperature5 = 199,143,255,255
+Temperature6 = 255,143,199,255
 DebugColor = 255,0,0,0
 
 ; Font
@@ -67,6 +69,7 @@ TempSensorCPU=9
 TempSensorSystem=1
 TempSensorDrive1=7
 TempSensorDrive2=8
+TempSensorDrive3=13
 
 ; Box settings
 BoxSize=(#BoxContentWidth# + #BoxPadding# * 2)
@@ -74,5 +77,5 @@ BoxPaddingWithTitle = (#BoxPadding# * 2 + #FontSize# + #BoxPadding# + 1)
 BoxHeightDrives=(#BoxPaddingWithTitle# + (#BoxPadding# + #GraphHeightSmall# + #BarHeight#) * 2)
 BoxHeightSystem=(#BoxPaddingWithTitle# + (#BoxPadding# + #BarHeight#) * 2)
 BoxHeightText=(#BoxPaddingWithTitle# + (#BoxPadding# + #FontSize#) * 5)
-BoxHeightTemperature=(#BoxPaddingWithTitle# + #BoxPadding# + #GraphHeight# + (#BoxPadding# + #FontSize#) * 5)
 BoxHeightNetwork=(#BoxPaddingWithTitle# + (#BoxPadding# + #GraphHeightSmall# + #BarHeight#) * 2)
+BoxHeightTemperature=(#BoxPaddingWithTitle# + #BoxPadding# + #GraphHeight# + (#BoxPadding# + #FontSize#) * 6)
