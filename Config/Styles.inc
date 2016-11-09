@@ -94,7 +94,7 @@ UpdateDivider=-1
 
 [MyRainmeterTitleStringGraphTopCentered]
 X=(#BoxContentWidth# / 2)
-Y=(#DisplayToDisplayMargin# + #FontOffset# - #BoldOffset#)
+Y=(#DisplayToDisplayMargin# + #FontOffset# + #GraphHeightSmall#)
 StringAlign=Center
 
 [MyRainmeterTitleStringBarLeft]
