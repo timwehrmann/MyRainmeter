@@ -5,8 +5,11 @@
 
 ; SpeedFan IDs
 Drive1 = C:
+Drive1MaxMB = 544
 Drive2 = D:
+Drive2MaxMB = 177
 Drive3 = E:
+Drive3MaxMB = 562
 
 ; Networks
 SpeedTestDL=94.4
