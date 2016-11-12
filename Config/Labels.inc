@@ -16,9 +16,9 @@ LabelPing=Aktueller Ping
 
 January=Januar
 February=Februar
-March=Marz
+March=März
 April=April
-May=May
+May=Mai
 June=Juni
 July=Juli
 August=August
