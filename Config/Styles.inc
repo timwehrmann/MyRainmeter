@@ -160,7 +160,6 @@ LineColor=#TemperatureDefault#
 LineWidth=#LineWidth#
 LineCount=1
 AntiAlias=0
-AutoScale=1
 DynamicVariables=1
 
 [MyRainmeterBar]
