@@ -52,9 +52,9 @@ AntiAlias=1
 FontOffset = 3
 BoldOffset = 1
 BoxPadding = 10
-BoxContentWidth = 240
+BoxContentWidth = 440
 BoxTopMargin = (#BoxPadding# + 5)
-BoxLeftMargin = (#BoxPadding# + 5)
+BoxLeftMargin = (#BoxPadding# + 500)
 BoxRightMargin = (#BoxPadding# + 5)
 DisplayToDisplayMargin = #BoxPadding#
 
