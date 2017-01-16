@@ -108,7 +108,7 @@ Y=(#DisplayToDisplayMargin# + #FontOffset# + #GraphHeightSmall#)
 StringAlign=Center
 
 [MyRainmeterTitleStringBarLeft]
-X=#BarPadding#
+X=(0 + #BarPadding#)r
 Y=(#BarPadding# - #BoldOffset#)r
 StringAlign=Left
 
@@ -129,7 +129,7 @@ Y=#BarPadding#r
 StringAlign=Left
 
 [MyRainmeterDataStringBarRight]
-X=(#BoxContentWidth# - #BarPadding#)
+X=(#BoxContentWidth# - #BarPadding# * 2)r
 Y=0r
 StringAlign=Right
 
