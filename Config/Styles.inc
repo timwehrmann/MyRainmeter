@@ -124,7 +124,7 @@ NumOfDecimals=1
 AutoScale=1
 
 [MyRainmeterDataStringBarLeft]
-X=#BarPadding#
+X=#BarPadding#r
 Y=#BarPadding#r
 StringAlign=Left
 
