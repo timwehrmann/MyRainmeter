@@ -82,7 +82,7 @@ W=#BoxContentWidth#
 H=0
 
 [MyRainmeterTitleString]
-X=0
+X=(#BoxLeftMargin# + #DisplayToDisplayMargin#)
 Y=0r
 FontFace=#FontFamily#
 FontSize=#FontSize#
@@ -98,7 +98,7 @@ NumOfDecimals=1
 AutoScale=1
 
 [MyRainmeterTitleStringGraphTopCentered]
-X=(#BoxContentWidth# / 2)
+X=(#BoxLeftMargin# + #DisplayToDisplayMargin# + #BoxContentWidth# / 2)
 Y=(#DisplayToDisplayMargin# + #FontOffset# - #BoldOffset#)
 StringAlign=Center
 
@@ -146,11 +146,11 @@ H=#BoxTopMargin#
 SolidColor=#DebugColor#
 X=0
 Y=0
-W=#BoxContentWidth#
+W=(#BoxSize# + #BoxLeftMargin# + #BoxRightMargin#)
 H=#DisplayToDisplayMargin#
 
 [MyRainmeterGraph]
-X=0
+X=(#BoxLeftMargin# + #DisplayToDisplayMargin#)
 Y=#DisplayToDisplayMargin#r
 H=#GraphHeightSmall#
 W=#BoxContentWidth#
@@ -163,7 +163,7 @@ AntiAlias=0
 DynamicVariables=1
 
 [MyRainmeterBar]
-X=0
+X=(#BoxLeftMargin# + #DisplayToDisplayMargin#)
 Y=#DisplayToDisplayMargin#r
 H=#BarHeight#
 W=#BoxContentWidth#
