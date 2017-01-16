@@ -113,7 +113,7 @@ Y=(#BarPadding# - #BoldOffset#)r
 StringAlign=Left
 
 [MyRainmeterDataString]
-X=#BoxContentWidth#
+X=#BoxContentWidth#r
 Y=0r
 FontFace=#FontFamily#
 FontColor=#TextColor#
