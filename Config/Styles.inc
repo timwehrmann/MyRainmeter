@@ -103,7 +103,7 @@ Y=(#DisplayToDisplayMargin# + #FontOffset# - #BoldOffset#)
 StringAlign=Center
 
 [MyRainmeterTitleStringGraphBottomCentered]
-X=(#BoxContentWidth# / 2)
+X=0r
 Y=(#DisplayToDisplayMargin# + #FontOffset# + #GraphHeightSmall#)
 StringAlign=Center
 
