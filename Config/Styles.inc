@@ -174,14 +174,14 @@ BarOrientation=Horizontal
 ;-------------------------------
 
 [MyRainmeterOrientationLine]
-X=0
+X=(#BoxLeftMargin# + #DisplayToDisplayMargin#)
 Y=(#GraphHeight# * 0.25)r
 H=1
 W=#BoxContentWidth#
 SolidColor=#GraphSeparatorColor#
 
 [MyRainmeterOrientationTitle]
-X=#BoxContentWidth#
+X=#BoxContentWidth#r
 Y=0r
 W=#BoxContentWidth#
 FontFace=#FontFamily#
