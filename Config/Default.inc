@@ -70,11 +70,11 @@ BarPadding = 4
 minTemp=0
 maxTemp=80
 TempSensorGraphics=0
-TempSensorCPU=9
-TempSensorSystem=1
-TempSensorDrive1=7
-TempSensorDrive2=8
-TempSensorDrive3=13
+TempSensorCPU=7
+TempSensorSystem=6
+TempSensorDrive1=2
+TempSensorDrive2=3
+TempSensorDrive3=1
 
 ; Box settings
 BoxSize=(#BoxContentWidth# + #BoxPadding# * 2)
