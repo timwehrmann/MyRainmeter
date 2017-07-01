@@ -126,12 +126,12 @@ StringAlign=Right
 NumOfDecimals=1
 AutoScale=1
 
-[MyRainmeterDataStringCurrentTemp]
+[MyRainmeterDataStringMaxTemp]
 X=-34r
 NumOfDecimals=0
 Text="%1"
 
-[MyRainmeterDataStringMaxTemp]
+[MyRainmeterDataStringCurrentTemp]
 NumOfDecimals=0
 Text="/ %1°C"
 
