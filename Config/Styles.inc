@@ -127,13 +127,13 @@ NumOfDecimals=1
 AutoScale=1
 
 [MyRainmeterDataStringMaxTemp]
-X=-34r
+X=-28r
 NumOfDecimals=0
-Text="%1"
+Text="%1 /"
 
 [MyRainmeterDataStringCurrentTemp]
 NumOfDecimals=0
-Text="/ %1°C"
+Text="%1°C"
 
 [MyRainmeterDataStringBarLeft]
 X=#BarPadding#r

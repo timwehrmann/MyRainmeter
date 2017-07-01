@@ -31,11 +31,17 @@ BoxTitleColor = 255,255,255,255
 BoxBackgroundColor = 0,0,0,100
 TemperatureDefault = 255,255,255,128
 Temperature1 = 255,199,143,255
+Temperature1Max = 255,199,143,128
 Temperature2 = 199,255,143,255
+Temperature2Max = 199,255,143,128
 Temperature3 = 143,255,199,255
+Temperature3Max = 143,255,199,128
 Temperature4 = 143,199,255,255
+Temperature4Max = 143,199,255,128
 Temperature5 = 199,143,255,255
+Temperature5Max = 199,143,255,128
 Temperature6 = 255,143,199,255
+Temperature6Max = 255,143,199,128
 DebugColor = 255,0,0,0
 
 ; Font
