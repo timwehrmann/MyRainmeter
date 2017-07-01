@@ -69,12 +69,34 @@ BarPadding = 4
 ; Temperatures min and max values
 minTemp=0
 maxTemp=80
-TempSensorGraphics=0
-TempSensorCPU=7
-TempSensorSystem=6
-TempSensorDrive1=2
-TempSensorDrive2=3
-TempSensorDrive3=1
+
+GPUSensorId=0xe0002000
+GPUSensorInstance=0x0
+GPUEntryId=0x1000000
+
+CPUSensorId=0xF0000400
+CPUSensorInstance=0x0
+CPUEntryId=0x100007f
+
+SystemSensorId=0xf7067950
+SystemSensorInstance=0x0
+SystemEntryId=0x1000000
+
+Drive1SensorId=0xf0000100
+Drive1SensorInstance=0x0
+Drive1EntryId=0x1000001
+
+Drive2SensorId=0xf0000100
+Drive2SensorInstance=0x3
+Drive2EntryId=0x1000000
+
+Drive3SensorId=0xf0000100
+Drive3SensorInstance=0x1
+Drive3EntryId=0x1000001
+
+Drive4SensorId=0xf0000100
+Drive4SensorInstance=0x2
+Drive4EntryId=0x1000001
 
 ; Box settings
 BoxSize=(#BoxContentWidth# + #BoxPadding# * 2)
