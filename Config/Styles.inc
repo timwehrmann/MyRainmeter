@@ -112,6 +112,9 @@ X=(0 + #BarPadding#)r
 Y=(#BarPadding# - #BoldOffset#)r
 StringAlign=Left
 
+[MyRainmeterTitleStringTemperatureList]
+Y=(#FontSize# + #BoxPadding#)r
+
 [MyRainmeterDataString]
 X=#BoxContentWidth#r
 Y=0r
@@ -122,6 +125,15 @@ AntiAlias=#AntiAlias#
 StringAlign=Right
 NumOfDecimals=1
 AutoScale=1
+
+[MyRainmeterDataStringCurrentTemp]
+X=-34r
+NumOfDecimals=0
+Text="%1"
+
+[MyRainmeterDataStringMaxTemp]
+NumOfDecimals=0
+Text="/ %1°C"
 
 [MyRainmeterDataStringBarLeft]
 X=#BarPadding#r
