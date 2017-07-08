@@ -7,6 +7,8 @@ Drive2 = D:
 Drive2MaxMB = 177
 Drive3 = E:
 Drive3MaxMB = 562
+Drive4 = F:
+Drive4MaxMB = 562
 
 ;---------------------------------------------------
 ;-- Networks
@@ -56,22 +58,25 @@ AntiAlias=1
 ;---------------------------------------------------
 ;-- Widths / Heights / Margins / Paddings
 FontOffset = 3
+FontHeight = (#FontSize# + #FontOffset#)
 BoldOffset = 1
 BoxPadding = 10
 BoxContentWidth = 240
 BoxTopMargin = (#BoxPadding# + 5)
 BoxLeftMargin = (#BoxPadding# + 5)
 BoxRightMargin = (#BoxPadding# + 5)
+BarTextMargin = (#FontOffset# + (#BoxPadding# / 2))
 DisplayToDisplayMargin = #BoxPadding#
 
 ;---------------------------------------------------
 ;-- Graph settings
+Direction = Left
 GraphHeight = 124
 GraphHeightSmall = 44
 
 ;---------------------------------------------------
 ;-- Bar settings
-BarHeight = 19
+BarHeight = 20
 BarPadding = 4
 
 ;---------------------------------------------------
@@ -107,7 +112,7 @@ Drive4EntryId=0x1000001
 ;-- Box settings
 BoxSize=(#BoxContentWidth# + #BoxPadding# * 2)
 BoxPaddingWithTitle = (#BoxPadding# * 2 + #FontSize# + #BoxPadding# + 1)
-BoxHeightDrives=(#BoxPaddingWithTitle# + (#BoxPadding# + #GraphHeightSmall# + #BarHeight#) * 3)
+BoxHeightDrives=(#BoxPaddingWithTitle# + (#BarHeight# + #BarTextMargin# + #FontHeight# + #BoxPadding#) * 4)
 BoxHeightSystem=(#BoxPaddingWithTitle# + (#BoxPadding# + #BarHeight#) * 2)
 BoxHeightText=(#BoxPaddingWithTitle# + (#BoxPadding# + #FontSize#) * 5)
 BoxHeightNetwork=(#BoxPaddingWithTitle# + (#BoxPadding# + #GraphHeightSmall# + #BarHeight#) * 2)

@@ -103,7 +103,7 @@ H=#DisplayToDisplayMargin#
 [MyRainmeterTitleString]
 X=(#BoxLeftMargin# + #DisplayToDisplayMargin#)
 Y=0r
-H=#FontSize# + #FontOffset#
+H=#FontHeight#
 FontFace=#FontFamily#
 FontSize=#FontSize#
 FontColor=#TitleColor#
@@ -115,7 +115,7 @@ UpdateDivider=-1
 [MyRainmeterDataString]
 X=#BoxContentWidth#r
 Y=0r
-H=#FontSize# + #FontOffset#
+H=#FontHeight#
 FontFace=#FontFamily#
 FontColor=#TextColor#
 FontSize=#FontSize#
@@ -176,6 +176,32 @@ StringAlign=Center
 X=#BarPadding#r
 Y=#BarPadding#r
 StringAlign=Left
+
+;-----------------------------------------------------------------------------------------------------------------------
+;-- Classes for "GraphAndBarCondensed" meters
+
+[MyRainmeterGraphCondensed]
+X=0r
+Y=0r
+H=#BarHeight#
+W=#BoxContentWidth#
+
+[MyRainmeterTitleStringGraphAndBarCondensed]
+Y=(#BarHeight# + #BarTextMargin#)r
+
+[MyRainmeterDataStringGraphAndBarCondensed]
+Y=(#BarHeight#)
+X=0r
+StringAlign=RightCenter
+
+[MyRainmeterDataStringDrives]
+NumOfDecimals=1
+Percentual=1
+Text="Frei: %1%"
+
+[MyRainmeterDataStringNetwork]
+NumOfDecimals=0
+Text="%1B/s"
 
 ;-----------------------------------------------------------------------------------------------------------------------
 ;-- Classes for "Temperature" meter
