@@ -223,7 +223,7 @@ Y=(#FontSize# + #BoxPadding#)r
 [MyRainmeterDataStringTemperature]
 AutoScale=0
 NumOfDecimals=0
-Text="%1 / %2 °C"
+Text="%2 / %1 °C"
 
 [MyRainmeterOrientationLine]
 X=(#BoxLeftMargin# + #DisplayToDisplayMargin#)
