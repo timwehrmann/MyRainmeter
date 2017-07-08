@@ -1,9 +1,6 @@
 [Variables]
-;-------------------------------
-;-- Variables for the boxes
-;-------------------------------
-
-; SpeedFan IDs
+;---------------------------------------------------
+;-- SpeedFan IDs
 Drive1 = C:
 Drive1MaxMB = 544
 Drive2 = D:
@@ -11,13 +8,15 @@ Drive2MaxMB = 177
 Drive3 = E:
 Drive3MaxMB = 562
 
-; Networks
+;---------------------------------------------------
+;-- Networks
 SpeedTestDL=94.4
 SpeedTestUL=33.31
 NetAVG=4
 FastNet=100
 
-; General colors
+;---------------------------------------------------
+;-- Colors
 ClockColor = 0,0,0,100
 ClockShadowColor = 0,0,0,20
 TitleColor = 255,255,255,140
@@ -44,7 +43,8 @@ Temperature6 = 255,143,199,255
 Temperature6Max = 255,143,199,128
 DebugColor = 255,0,0,0
 
-; Font
+;---------------------------------------------------
+;-- Fonts
 FontFamilyDate=ITC Avant Garde Pro XLt
 FontFamilyClock=ITC Avant Garde Pro Bk
 FontFamily = Myriad Pro
@@ -54,7 +54,8 @@ TitleFontCase = Upper
 TitleFontStyle = Bold
 AntiAlias=1
 
-; General widths and heights
+;---------------------------------------------------
+;-- Widths / Heights / Margins / Paddings
 FontOffset = 3
 BoldOffset = 1
 BoxPadding = 10
@@ -64,47 +65,47 @@ BoxLeftMargin = (#BoxPadding# + 5)
 BoxRightMargin = (#BoxPadding# + 5)
 DisplayToDisplayMargin = #BoxPadding#
 
-; Graph settings
+;---------------------------------------------------
+;-- Graph settings
 GraphHeight = 124
 GraphHeightSmall = 44
 
-; Bar settings
+;---------------------------------------------------
+;-- Bar settings
 BarHeight = 19
 BarPadding = 4
 
-; Temperatures min and max values
+;---------------------------------------------------
+;-- Temperatures min and max values
 minTemp=0
 maxTemp=80
 
+;---------------------------------------------------
+;-- HWiNFO IDs
 GPUSensorId=0xe0002000
 GPUSensorInstance=0x0
 GPUEntryId=0x1000000
-
 CPUSensorId=0xF0000400
 CPUSensorInstance=0x0
 CPUEntryId=0x100007f
-
 SystemSensorId=0xf7067950
 SystemSensorInstance=0x0
 SystemEntryId=0x1000000
-
 Drive1SensorId=0xf0000100
 Drive1SensorInstance=0x0
 Drive1EntryId=0x1000001
-
 Drive2SensorId=0xf0000100
 Drive2SensorInstance=0x3
 Drive2EntryId=0x1000000
-
 Drive3SensorId=0xf0000100
 Drive3SensorInstance=0x1
 Drive3EntryId=0x1000001
-
 Drive4SensorId=0xf0000100
 Drive4SensorInstance=0x2
 Drive4EntryId=0x1000001
 
-; Box settings
+;---------------------------------------------------
+;-- Box settings
 BoxSize=(#BoxContentWidth# + #BoxPadding# * 2)
 BoxPaddingWithTitle = (#BoxPadding# * 2 + #FontSize# + #BoxPadding# + 1)
 BoxHeightDrives=(#BoxPaddingWithTitle# + (#BoxPadding# + #GraphHeightSmall# + #BarHeight#) * 3)
