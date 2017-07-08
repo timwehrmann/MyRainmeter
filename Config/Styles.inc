@@ -126,9 +126,15 @@ StringAlign=Right
 NumOfDecimals=1
 AutoScale=1
 
+[MyRainmeterDataStringDrives]
+AutoScale=0
+Scale=1073741824
+Text="%1 / %2 GB"
+
 [MyRainmeterDataStringTemperature]
+AutoScale=0
 NumOfDecimals=0
-Text="%1 / %2°C"
+Text="%1 / %2 °C"
 
 ;-------------------------------
 
