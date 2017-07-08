@@ -92,11 +92,6 @@ StringStyle=#TitleFontStyle#
 StringCase=#TitleFontCase#
 UpdateDivider=-1
 
-[MyRainmeterTitleDataString]
-UpdateDivider=1
-NumOfDecimals=1
-AutoScale=1
-
 [MyRainmeterTitleStringGraphTopCentered]
 X=(#BoxLeftMargin# + #DisplayToDisplayMargin# + #BoxContentWidth# / 2)
 Y=(#DisplayToDisplayMargin# + #FontOffset# - #BoldOffset#)
