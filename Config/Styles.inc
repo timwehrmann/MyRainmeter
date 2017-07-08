@@ -103,6 +103,7 @@ H=#DisplayToDisplayMargin#
 [MyRainmeterTitleString]
 X=(#BoxLeftMargin# + #DisplayToDisplayMargin#)
 Y=0r
+H=#FontSize# + #FontOffset#
 FontFace=#FontFamily#
 FontSize=#FontSize#
 FontColor=#TitleColor#
@@ -114,6 +115,7 @@ UpdateDivider=-1
 [MyRainmeterDataString]
 X=#BoxContentWidth#r
 Y=0r
+H=#FontSize# + #FontOffset#
 FontFace=#FontFamily#
 FontColor=#TextColor#
 FontSize=#FontSize#
