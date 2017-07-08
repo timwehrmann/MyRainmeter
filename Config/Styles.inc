@@ -126,12 +126,16 @@ StringAlign=Right
 NumOfDecimals=1
 AutoScale=1
 
-[MyRainmeterDataStringMaxTemp]
+[MyRainmeterDataStringSecondary]
 X=-28r
 NumOfDecimals=0
 Text="%1 /"
 
-[MyRainmeterDataStringCurrentTemp]
+[MyRainmeterDataStringPrimary]
+NumOfDecimals=0
+Text="%1"
+
+[MyRainmeterDataStringPrimaryTemperature]
 NumOfDecimals=0
 Text="%1°C"
 
@@ -182,6 +186,19 @@ W=#BoxContentWidth#
 BarColor=#BarActiveColor#
 SolidColor=#BarBackColor#
 BarOrientation=Horizontal
+
+[MyRainmeterGraphInBar]
+X=(#BoxLeftMargin# + #DisplayToDisplayMargin#)
+Y=#DisplayToDisplayMargin#r
+H=#GraphHeightSmall#
+W=#BoxContentWidth#
+GraphStart=#Direction#
+SolidColor=#GraphBackColor#
+LineColor=#TemperatureDefault#
+LineWidth=#LineWidth#
+LineCount=1
+AntiAlias=0
+DynamicVariables=1
 
 ;-------------------------------
 
