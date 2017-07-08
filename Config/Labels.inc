@@ -1,6 +1,6 @@
 [Variables]
 BoxTitleTitleDrives = Laufwerke
-BoxTitleTitleSystemload = Systemauslastung
+BoxTitleTitleSystemload = System
 BoxTitleSystemInformation = Systeminformationen
 BoxTitleTemperatures = Temperaturen
 BoxTitleNetworkLoad = Netzwerkauslastung

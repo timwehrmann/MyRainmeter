@@ -203,6 +203,15 @@ Text="Frei: %1%"
 NumOfDecimals=0
 Text="%1B/s"
 
+[MyRainmeterDataStringPercentual]
+NumOfDecimals=0
+Percentual=1
+Text="%1%"
+
+[MyRainmeterDataStringBytes]
+NumOfDecimals=1
+Text="%1B / %2B"
+
 ;-----------------------------------------------------------------------------------------------------------------------
 ;-- Classes for "Temperature" meter
 
