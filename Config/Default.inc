@@ -1,13 +1,17 @@
 [Variables]
 ;-----------------------------------------------------------------------------------------------------------------------
-;-- SpeedFan IDs
+;-- SpeedFan IDs#
 Drive1 = C:
+DriveType1 = SSD
 Drive1MaxMB = 544
 Drive2 = D:
+DriveType2 = HDD
 Drive2MaxMB = 177
 Drive3 = E:
+DriveType3 = SSD
 Drive3MaxMB = 562
 Drive4 = F:
+DriveType4 = SSD
 Drive4MaxMB = 562
 
 ;-----------------------------------------------------------------------------------------------------------------------
