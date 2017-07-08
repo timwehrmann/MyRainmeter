@@ -194,12 +194,12 @@ Y=(#BarHeight#)
 X=0r
 StringAlign=RightCenter
 
-[MyRainmeterDataStringDrives]
+[MyRainmeterDataStringFreePercentual]
 NumOfDecimals=1
 Percentual=1
 Text="Frei: %1%"
 
-[MyRainmeterDataStringNetwork]
+[MyRainmeterDataStringBytesSecond]
 NumOfDecimals=0
 Text="%1B/s"
 
