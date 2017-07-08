@@ -1,3 +1,6 @@
+;-----------------------------------------------------------------------------------------------------------------------
+;--- Classes for "Date" meters
+
 [Time]
 StringAlign=Center
 StringCase=None
@@ -43,7 +46,8 @@ FontSize=25
 AntiAlias=1
 ClipString=0
 
-;-------------------------------
+;-----------------------------------------------------------------------------------------------------------------------
+;--- Classes for box backgrounds
 
 [MyRainmeterBoxBackground]
 SolidColor=#BoxBackgroundColor#
@@ -73,72 +77,11 @@ LineWidth=1
 LineColor=#LineColor#
 AntiAlias=0
 
-;-------------------------------
-
 [MyRainmeterTextDisplayContainer]
 X=0
 Y=(#DisplayToDisplayMargin# - #FontOffset# * 2) + #FontOffset#
 W=#BoxContentWidth#
 H=0
-
-[MyRainmeterTitleString]
-X=(#BoxLeftMargin# + #DisplayToDisplayMargin#)
-Y=0r
-FontFace=#FontFamily#
-FontSize=#FontSize#
-FontColor=#TitleColor#
-AntiAlias=#AntiAlias#
-StringStyle=#TitleFontStyle#
-StringCase=#TitleFontCase#
-UpdateDivider=-1
-
-[MyRainmeterTitleStringGraphTopCentered]
-X=(#BoxLeftMargin# + #DisplayToDisplayMargin# + #BoxContentWidth# / 2)
-Y=(#DisplayToDisplayMargin# + #FontOffset# - #BoldOffset#)
-StringAlign=Center
-
-[MyRainmeterTitleStringGraphBottomCentered]
-X=0r
-Y=(#DisplayToDisplayMargin# + #FontOffset# + #GraphHeightSmall#)
-StringAlign=Center
-
-[MyRainmeterTitleStringBarLeft]
-X=(0 + #BarPadding#)r
-Y=(#BarPadding# - #BoldOffset#)r
-StringAlign=Left
-
-[MyRainmeterTitleStringTemperature]
-Y=(#FontSize# + #BoxPadding#)r
-
-[MyRainmeterDataString]
-X=#BoxContentWidth#r
-Y=0r
-FontFace=#FontFamily#
-FontColor=#TextColor#
-FontSize=#FontSize#
-AntiAlias=#AntiAlias#
-StringAlign=Right
-NumOfDecimals=1
-AutoScale=1
-
-[MyRainmeterDataStringTemperature]
-AutoScale=0
-NumOfDecimals=0
-Text="%1 / %2 °C"
-
-;-------------------------------
-
-[MyRainmeterDataStringBarLeft]
-X=#BarPadding#r
-Y=#BarPadding#r
-StringAlign=Left
-
-[MyRainmeterDataStringBarRight]
-X=(#BoxContentWidth# - #BarPadding# * 2)r
-Y=0r
-StringAlign=Right
-
-;-------------------------------
 
 [MyRainmeterBoxToBoxMargin]
 SolidColor=#DebugColor#
@@ -153,6 +96,31 @@ X=0
 Y=0
 W=(#BoxSize# + #BoxLeftMargin# + #BoxRightMargin#)
 H=#DisplayToDisplayMargin#
+
+;-----------------------------------------------------------------------------------------------------------------------
+;--- Generic classes
+
+[MyRainmeterTitleString]
+X=(#BoxLeftMargin# + #DisplayToDisplayMargin#)
+Y=0r
+FontFace=#FontFamily#
+FontSize=#FontSize#
+FontColor=#TitleColor#
+AntiAlias=#AntiAlias#
+StringStyle=#TitleFontStyle#
+StringCase=#TitleFontCase#
+UpdateDivider=-1
+
+[MyRainmeterDataString]
+X=#BoxContentWidth#r
+Y=0r
+FontFace=#FontFamily#
+FontColor=#TextColor#
+FontSize=#FontSize#
+AntiAlias=#AntiAlias#
+StringAlign=Right
+NumOfDecimals=1
+AutoScale=1
 
 [MyRainmeterGraph]
 X=(#BoxLeftMargin# + #DisplayToDisplayMargin#)
@@ -176,20 +144,47 @@ BarColor=#BarActiveColor#
 SolidColor=#BarBackColor#
 BarOrientation=Horizontal
 
-[MyRainmeterGraphInBar]
-X=(#BoxLeftMargin# + #DisplayToDisplayMargin#)
-Y=#DisplayToDisplayMargin#r
-H=#GraphHeightSmall#
-W=#BoxContentWidth#
-GraphStart=#Direction#
-SolidColor=#GraphBackColor#
-LineColor=#TemperatureDefault#
-LineWidth=#LineWidth#
-LineCount=1
-AntiAlias=0
-DynamicVariables=1
+;-----------------------------------------------------------------------------------------------------------------------
+;-- Classes for "Bar" meters
 
-;-------------------------------
+[MyRainmeterTitleStringBarLeft]
+X=(0 + #BarPadding#)r
+Y=(#BarPadding# - #BoldOffset#)r
+StringAlign=Left
+
+[MyRainmeterDataStringBarRight]
+X=(#BoxContentWidth# - #BarPadding# * 2)r
+Y=0r
+StringAlign=Right
+
+;-----------------------------------------------------------------------------------------------------------------------
+;-- Classes for "GraphAndBar" meters
+
+[MyRainmeterTitleStringGraphTopCentered]
+X=(#BoxLeftMargin# + #DisplayToDisplayMargin# + #BoxContentWidth# / 2)
+Y=(#DisplayToDisplayMargin# + #FontOffset# - #BoldOffset#)
+StringAlign=Center
+
+[MyRainmeterTitleStringGraphBottomCentered]
+X=0r
+Y=(#DisplayToDisplayMargin# + #FontOffset# + #GraphHeightSmall#)
+StringAlign=Center
+
+[MyRainmeterDataStringBarLeft]
+X=#BarPadding#r
+Y=#BarPadding#r
+StringAlign=Left
+
+;-----------------------------------------------------------------------------------------------------------------------
+;-- Classes for "Temperature" meter
+
+[MyRainmeterTitleStringTemperature]
+Y=(#FontSize# + #BoxPadding#)r
+
+[MyRainmeterDataStringTemperature]
+AutoScale=0
+NumOfDecimals=0
+Text="%1 / %2 °C"
 
 [MyRainmeterOrientationLine]
 X=(#BoxLeftMargin# + #DisplayToDisplayMargin#)
