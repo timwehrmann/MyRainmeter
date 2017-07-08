@@ -199,7 +199,7 @@ StringAlign=RightCenter
 [MyRainmeterDataStringFreePercentual]
 NumOfDecimals=1
 Percentual=1
-Text="Frei: %1%"
+Text="#LabelFree#: %1%"
 
 [MyRainmeterDataStringBytesSecond]
 NumOfDecimals=0
