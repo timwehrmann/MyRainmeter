@@ -1,5 +1,5 @@
 [Variables]
-;---------------------------------------------------
+;-----------------------------------------------------------------------------------------------------------------------
 ;-- SpeedFan IDs
 Drive1 = C:
 Drive1MaxMB = 544
@@ -10,15 +10,15 @@ Drive3MaxMB = 562
 Drive4 = F:
 Drive4MaxMB = 562
 
-;---------------------------------------------------
+;-----------------------------------------------------------------------------------------------------------------------
 ;-- Networks
 SpeedTestDL=94.4
 SpeedTestUL=33.31
 NetAVG=4
 FastNet=100
 
-;---------------------------------------------------
-;-- Colors
+;-----------------------------------------------------------------------------------------------------------------------
+;-- Colors (Temperature hue: 20 / 60 / 100 / 140 / 180 / 220 / 0)
 ClockColor = 0,0,0,100
 ClockShadowColor = 0,0,0,20
 TitleColor = 255,255,255,140
@@ -43,9 +43,11 @@ Temperature5 = 199,143,255,255
 Temperature5Max = 199,143,255,128
 Temperature6 = 255,143,199,255
 Temperature6Max = 255,143,199,128
+Temperature7 = 255,142,142,255
+Temperature7Max = 255,142,142,128
 DebugColor = 255,0,0,0
 
-;---------------------------------------------------
+;-----------------------------------------------------------------------------------------------------------------------
 ;-- Fonts
 FontFamilyDate=ITC Avant Garde Pro XLt
 FontFamilyClock=ITC Avant Garde Pro Bk
@@ -55,7 +57,7 @@ TitleFontCase = Upper
 TitleFontStyle = Bold
 AntiAlias=1
 
-;---------------------------------------------------
+;-----------------------------------------------------------------------------------------------------------------------
 ;-- Widths / Heights / Margins / Paddings
 FontOffset = 3
 FontHeight = (#FontSize# + #FontOffset#)
@@ -70,23 +72,23 @@ DisplayToDisplayMargin = #BoxPadding#
 RowText = (#BoxPadding# + #FontSize#)
 RowBarGraph = (#BarHeight# + #BarTextMargin# + #FontHeight# + #BoxPadding#)
 
-;---------------------------------------------------
+;-----------------------------------------------------------------------------------------------------------------------
 ;-- Graph settings
 Direction = Left
 GraphHeight = 124
 GraphHeightSmall = 44
 
-;---------------------------------------------------
+;-----------------------------------------------------------------------------------------------------------------------
 ;-- Bar settings
 BarHeight = 30
 BarPadding = 4
 
-;---------------------------------------------------
+;-----------------------------------------------------------------------------------------------------------------------
 ;-- Temperatures min and max values
 minTemp=0
 maxTemp=80
 
-;---------------------------------------------------
+;-----------------------------------------------------------------------------------------------------------------------
 ;-- HWiNFO IDs
 GPUSensorId=0xe0002000
 GPUSensorInstance=0x0
@@ -110,7 +112,7 @@ Drive4SensorId=0xf0000100
 Drive4SensorInstance=0x2
 Drive4EntryId=0x1000001
 
-;---------------------------------------------------
+;-----------------------------------------------------------------------------------------------------------------------
 ;-- Box settings
 BoxSize=(#BoxContentWidth# + #BoxPadding# * 2)
 BoxPaddingWithTitle = (#BoxPadding# * 2 + #FontSize# + #BoxPadding# + 1)
@@ -118,4 +120,4 @@ BoxHeightDrives=(#BoxPaddingWithTitle# + #RowBarGraph# * 4)
 BoxHeightSystem=(#BoxPaddingWithTitle# + #RowText# * 2 + #RowBarGraph# * 2)
 BoxHeightText=(#BoxPaddingWithTitle# + #RowText# * 5)
 BoxHeightNetwork=(#BoxPaddingWithTitle# + #RowText# * 2 + #RowBarGraph# * 2)
-BoxHeightTemperature=(#BoxPaddingWithTitle# + #BoxPadding# + #GraphHeight# + #RowText# * 6)
+BoxHeightTemperature=(#BoxPaddingWithTitle# + #BoxPadding# + #GraphHeight# + #RowText# * 7)
