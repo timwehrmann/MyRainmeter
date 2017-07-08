@@ -67,6 +67,8 @@ BoxLeftMargin = (#BoxPadding# + 5)
 BoxRightMargin = (#BoxPadding# + 5)
 BarTextMargin = (#FontOffset# + (#BoxPadding# / 2))
 DisplayToDisplayMargin = #BoxPadding#
+RowText = (#BoxPadding# + #FontSize#)
+RowBarGraph = (#BarHeight# + #BarTextMargin# + #FontHeight# + #BoxPadding#)
 
 ;---------------------------------------------------
 ;-- Graph settings
@@ -112,8 +114,8 @@ Drive4EntryId=0x1000001
 ;-- Box settings
 BoxSize=(#BoxContentWidth# + #BoxPadding# * 2)
 BoxPaddingWithTitle = (#BoxPadding# * 2 + #FontSize# + #BoxPadding# + 1)
-BoxHeightDrives=(#BoxPaddingWithTitle# + (#BarHeight# + #BarTextMargin# + #FontHeight# + #BoxPadding#) * 4)
-BoxHeightSystem=(#BoxPaddingWithTitle# + (#BoxPadding# + #BarHeight#) * 2)
-BoxHeightText=(#BoxPaddingWithTitle# + (#BoxPadding# + #FontSize#) * 5)
-BoxHeightNetwork=(#BoxPaddingWithTitle# + (#BoxPadding# + #GraphHeightSmall# + #BarHeight#) * 2)
-BoxHeightTemperature=(#BoxPaddingWithTitle# + #BoxPadding# + #GraphHeight# + (#BoxPadding# + #FontSize#) * 6)
+BoxHeightDrives=(#BoxPaddingWithTitle# + #RowBarGraph# * 4)
+BoxHeightSystem=(#BoxPaddingWithTitle# + #RowText# * 2 + #RowBarGraph# * 2)
+BoxHeightText=(#BoxPaddingWithTitle# + #RowText# * 5)
+BoxHeightNetwork=(#BoxPaddingWithTitle# + #RowText# * 2 + #RowBarGraph# * 2)
+BoxHeightTemperature=(#BoxPaddingWithTitle# + #BoxPadding# + #GraphHeight# + #RowText# * 6)
