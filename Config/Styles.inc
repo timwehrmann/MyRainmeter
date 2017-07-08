@@ -112,7 +112,7 @@ X=(0 + #BarPadding#)r
 Y=(#BarPadding# - #BoldOffset#)r
 StringAlign=Left
 
-[MyRainmeterTitleStringTemperatureList]
+[MyRainmeterTitleStringTemperature]
 Y=(#FontSize# + #BoxPadding#)r
 
 [MyRainmeterDataString]
@@ -126,18 +126,11 @@ StringAlign=Right
 NumOfDecimals=1
 AutoScale=1
 
-[MyRainmeterDataStringSecondary]
-X=-28r
+[MyRainmeterDataStringTemperature]
 NumOfDecimals=0
-Text="%1 /"
+Text="%1 / %2°C"
 
-[MyRainmeterDataStringPrimary]
-NumOfDecimals=0
-Text="%1"
-
-[MyRainmeterDataStringPrimaryTemperature]
-NumOfDecimals=0
-Text="%1°C"
+;-------------------------------
 
 [MyRainmeterDataStringBarLeft]
 X=#BarPadding#r
