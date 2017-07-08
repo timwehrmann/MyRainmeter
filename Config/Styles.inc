@@ -190,8 +190,10 @@ W=#BoxContentWidth#
 Y=(#BarHeight# + #BarTextMargin#)r
 
 [MyRainmeterDataStringGraphAndBarCondensed]
-Y=(#BarHeight#)
-X=0r
+H=#BarHeight#
+W=#BoxContentWidth#
+Y=((#BarHeight# / 2) + #DisplayToDisplayMargin#)
+X=(#BoxContentWidth# + #BoxLeftMargin# + #BoxPadding#)
 StringAlign=RightCenter
 
 [MyRainmeterDataStringFreePercentual]
