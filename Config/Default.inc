@@ -25,6 +25,7 @@ FastNet=100
 ;-- Colors (Temperature hue: 20 / 60 / 100 / 140 / 180 / 220 / 0)
 ClockColor = 0,0,0,100
 ClockShadowColor = 0,0,0,20
+ClockBackgroundColor = 0,0,0,32
 TitleColor = 255,255,255,140
 TextColor = 255,255,255,100
 LineColor = 255,255,255,25
@@ -68,6 +69,7 @@ BarTextMargin = (#FontOffset# + (#BoxPadding# / 2))
 DisplayToDisplayMargin = #BoxPadding#
 RowText = (#BoxPadding# + #FontSize#)
 RowBarGraph = (#BarHeight# + #BarTextMargin# + #FontHeight# + #BoxPadding#)
+ClockTimeWidth = 600
 
 ;-----------------------------------------------------------------------------------------------------------------------
 ;-- Graph settings

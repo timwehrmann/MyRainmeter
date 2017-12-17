@@ -1,6 +1,27 @@
 ;-----------------------------------------------------------------------------------------------------------------------
 ;--- Classes for "Date" meters
 
+[HighlightBox]
+SolidColor=#ClockBackgroundColor#
+
+[TimeBox]
+X=0
+Y=0
+W=#ClockTimeWidth#
+H=180
+
+[DateBox]
+X=0
+Y=0
+W=#ClockTimeWidth#
+H=48
+
+[SoundSwitcherBox]
+X=0
+Y=0
+W=#ClockTimeWidth#
+H=64
+
 [Time]
 StringAlign=Center
 StringCase=None
@@ -12,15 +33,15 @@ FontFace=#FontFamilyClock#
 FontSize=150
 AntiAlias=1
 ClipString=0
+X=(#ClockTimeWidth# / 2)
+Y=-24
+W=#ClockTimeWidth#
+H=180
 
 [TimeShadow]
-StringAlign=Center
-StringStyle=Normal
 FontColor=#ClockShadowColor#
-FontFace=#FontFamilyClock#
-FontSize=150
-AntiAlias=1
-ClipString=0
+X=(#ClockTimeWidth# / 2) + 6
+Y=(-24 + 6)
 
 [Date]
 StringAlign=Center
@@ -33,18 +54,13 @@ FontFace=#FontFamilyDate#
 FontSize=25
 AntiAlias=1
 ClipString=0
+X=(#ClockTimeWidth# / 2)
+Y=4
 
 [DateShadow]
-StringAlign=Center
-StringCase=None
-StringStyle=Normal
-StringEffect=shadow
-FontEffectColor=#ClockShadowColor#
 FontColor=#ClockShadowColor#
-FontFace=#FontFamilyDate#
-FontSize=25
-AntiAlias=1
-ClipString=0
+X=(#ClockTimeWidth# / 2) + 1
+Y=(4 + 1)
 
 ;-----------------------------------------------------------------------------------------------------------------------
 ;--- Classes for box backgrounds
