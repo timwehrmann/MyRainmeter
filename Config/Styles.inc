@@ -20,7 +20,27 @@ H=48
 X=0
 Y=0
 W=#ClockTimeWidth#
-H=64
+H=#SoundSwitcherSize#
+
+[SoundSwitch]
+AntiAlias=1
+ImageAlpha=128
+ImageTint=#ClockColor#
+X=(#ClockTimeWidth# / 2 - #SoundSwitcherSize# - 1)
+H=#SoundSwitcherSize#
+W=#SoundSwitcherSize#
+SolidColor=#ClockBackgroundColor#
+
+[SoundSwitchRight]
+X=(#SoundSwitcherSize# + 2)r
+
+[SoundSwitchHover]
+ImageAlpha=255
+ImageTint=#TitleColor#
+
+[SoundSwitchActive]
+Imagetint=255,0,0,255
+ImageAlpha=255
 
 [Time]
 StringAlign=Center

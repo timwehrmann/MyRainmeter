@@ -70,6 +70,7 @@ DisplayToDisplayMargin = #BoxPadding#
 RowText = (#BoxPadding# + #FontSize#)
 RowBarGraph = (#BarHeight# + #BarTextMargin# + #FontHeight# + #BoxPadding#)
 ClockTimeWidth = 600
+SoundSwitcherSize = 64
 
 ;-----------------------------------------------------------------------------------------------------------------------
 ;-- Graph settings
