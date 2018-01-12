@@ -238,7 +238,6 @@ Percentual=1
 Text="#LabelFree#: %1%"
 
 [MyRainmeterDataStringBytesSecond]
-NumOfDecimals=0
 Text="%1B/s"
 
 [MyRainmeterDataStringPercentual]

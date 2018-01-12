@@ -90,6 +90,12 @@ maxTemp=80
 
 ;-----------------------------------------------------------------------------------------------------------------------
 ;-- HWiNFO IDs
+CurrentDownloadSensorId=0xf000ea00
+CurrentDownloadSensorInstance=0x0
+CurrentDownloadEntryId=0x8000002
+CurrentUploadSensorId=0xf000ea00
+CurrentUploadSensorInstance=0x0
+CurrentUploadEntryId=0x8000003
 GPUSensorId=0xe0002000
 GPUSensorInstance=0x0
 GPUEntryId=0x1000000
