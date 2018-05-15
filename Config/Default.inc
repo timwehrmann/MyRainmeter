@@ -10,7 +10,7 @@ Drive2MaxMB = 177
 Drive3 = E:
 DriveType3 = SSD
 Drive3MaxMB = 562
-Drive4 = F:
+Drive4 = P:
 DriveType4 = SSD
 Drive4MaxMB = 562
 
