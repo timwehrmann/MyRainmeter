@@ -34,7 +34,8 @@ BarBackColor = 233,186,118,40
 GraphBackColor = 233,186,118,20
 GraphSeparatorColor = 255,255,255,64
 BoxTitleColor = 255,255,255,255
-BoxBackgroundColor = 0,0,0,100
+BoxBackgroundColor = 0,0,0,0
+FullsizeBoxBackgroundColor = 0,0,0,100
 TemperatureDefault = 255,255,255,128
 Temperature1 = 255,199,143,192
 Temperature2 = 199,255,143,192
@@ -69,8 +70,6 @@ BarTextMargin = (#FontOffset# + (#BoxPadding# / 2))
 DisplayToDisplayMargin = #BoxPadding#
 RowText = (#BoxPadding# + #FontSize#)
 RowBarGraph = (#BarHeight# + #BarTextMargin# + #FontHeight# + #BoxPadding#)
-ClockTimeWidth = 600
-SoundSwitcherSize = 64
 
 ;-----------------------------------------------------------------------------------------------------------------------
 ;-- Graph settings
@@ -121,9 +120,14 @@ Drive4EntryId=0x1000001
 ;-----------------------------------------------------------------------------------------------------------------------
 ;-- Box settings
 BoxSize=(#BoxContentWidth# + #BoxPadding# * 2)
+BoxFullsizeWidth=(#BoxSize# + #BoxLeftMargin# + #BoxRightMargin#)
 BoxPaddingWithTitle = (#BoxPadding# * 2 + #FontSize# + #BoxPadding# + 1)
 BoxHeightDrives=(#BoxPaddingWithTitle# + #RowBarGraph# * 4)
 BoxHeightSystem=(#BoxPaddingWithTitle# + #RowText# * 2 + #RowBarGraph# * 2)
 BoxHeightText=(#BoxPaddingWithTitle# + #RowText# * 5)
 BoxHeightNetwork=(#BoxPaddingWithTitle# + #RowText# * 2 + #RowBarGraph# * 2)
 BoxHeightTemperature=(#BoxPaddingWithTitle# + #BoxPadding# + #GraphHeight# + #RowText# * 7)
+
+;-----------------------------------------------------------------------------------------------------------------------
+;-- Date and Clock settings
+ClockTimeWidth = (#WORKAREAWIDTH# / 2 - #BoxFullsizeWidth#)

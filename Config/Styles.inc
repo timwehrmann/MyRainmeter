@@ -68,7 +68,7 @@ W=#BoxSize#
 [MyRainmeterFullsizeBoxBackground]
 SolidColor=#FullsizeBoxBackgroundColor#
 H=#WORKAREAHEIGHT#
-W=(#BoxSize# + #BoxLeftMargin# + #BoxRightMargin#)
+W=#BoxFullsizeWidth#
 
 [MyRainmeterBoxTitleString]
 X=(#BoxContentWidth#/2 + #BoxPadding# + #BoxLeftMargin#)
