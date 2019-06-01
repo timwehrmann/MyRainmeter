@@ -65,6 +65,11 @@ X=#BoxLeftMargin#
 Y=#BoxTopMargin#
 W=#BoxSize#
 
+[MyRainmeterFullsizeBoxBackground]
+SolidColor=#FullsizeBoxBackgroundColor#
+H=#WORKAREAHEIGHT#
+W=(#BoxSize# + #BoxLeftMargin# + #BoxRightMargin#)
+
 [MyRainmeterBoxTitleString]
 X=(#BoxContentWidth#/2 + #BoxPadding# + #BoxLeftMargin#)
 Y=(#BoxPadding# - #FontOffset# + #BoxTopMargin#)
