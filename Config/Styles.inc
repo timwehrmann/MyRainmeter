@@ -174,43 +174,12 @@ H=#BarHeight#
 W=#BoxContentWidth#
 
 ;-----------------------------------------------------------------------------------------------------------------------
-;-- Classes for "Bar" meters
-
-[MyRainmeterTitleStringBarLeft]
-X=(0 + #BarPadding#)r
-Y=(#BarPadding# - #BoldOffset#)r
-StringAlign=Left
-
-[MyRainmeterDataStringBarRight]
-X=(#BoxContentWidth# - #BarPadding# * 2)r
-Y=0r
-StringAlign=Right
-
-;-----------------------------------------------------------------------------------------------------------------------
-;-- Classes for "GraphAndBar" meters
-
-[MyRainmeterTitleStringGraphTopCentered]
-X=(#BoxLeftMargin# + #DisplayToDisplayMargin# + #BoxContentWidth# / 2)
-Y=(#DisplayToDisplayMargin# + #FontOffset# - #BoldOffset#)
-StringAlign=Center
-
-[MyRainmeterTitleStringGraphBottomCentered]
-X=0r
-Y=(#DisplayToDisplayMargin# + #FontOffset# + #GraphHeight#)
-StringAlign=Center
-
-[MyRainmeterDataStringBarLeft]
-X=#BarPadding#r
-Y=#BarPadding#r
-StringAlign=Left
-
-;-----------------------------------------------------------------------------------------------------------------------
 ;-- Classes for "GraphAndBarCondensed" meters
 
-[MyRainmeterTitleStringGraphAndBarCondensed]
+[MyRainmeterTitleStringBarGraph]
 Y=(#BarHeight# + #BarTextMargin#)r
 
-[MyRainmeterDataStringGraphAndBarCondensed]
+[MyRainmeterDataStringBarGraph]
 H=#BarHeight#
 W=#BoxContentWidth#
 Y=((#BarHeight# / 2) + #DisplayToDisplayMargin#)
@@ -222,9 +191,6 @@ NumOfDecimals=1
 Percentual=1
 Text="#LabelFree#: %1%"
 
-[MyRainmeterDataStringBytesSecond]
-Text="%1B/s"
-
 [MyRainmeterDataStringPercentual]
 NumOfDecimals=0
 Percentual=1
@@ -233,6 +199,9 @@ Text="%1%"
 [MyRainmeterDataStringBytes]
 NumOfDecimals=1
 Text="%1B / %2B"
+
+[MyRainmeterDataStringBytesSecond]
+Text="%1B/s"
 
 ;-----------------------------------------------------------------------------------------------------------------------
 ;-- Classes for "Temperature" meter
