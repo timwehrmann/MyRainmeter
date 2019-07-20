@@ -63,7 +63,13 @@ Y=(4 + 1)
 SolidColor=#BoxBackgroundColor#
 X=#BoxLeftMargin#
 Y=#BoxTopMargin#
-W=#BoxSize#
+W=#BoxWidth#
+
+[MyRainmeterElementBackground]
+SolidColor=#ElementBackgroundColor#
+X=0
+Y=0
+W=#BoxWidth#
 
 [MyRainmeterFullsizeBoxBackground]
 SolidColor=#FullsizeBoxBackgroundColor#
@@ -99,17 +105,17 @@ W=#BoxContentWidth#
 H=0
 
 [MyRainmeterBoxToBoxMargin]
-SolidColor=#DebugColor#
+SolidColor=#MarginBackgroundColor#
 X=0
 Y=0
-W=(#BoxSize# + #BoxLeftMargin# + #BoxRightMargin#)
+W=(#BoxWidth# + #BoxLeftMargin# + #BoxRightMargin#)
 H=#BoxTopMargin#
 
 [MyRainmeterDisplayToDisplayMargin]
-SolidColor=#DebugColor#
+SolidColor=#MarginBackgroundColor#
 X=0
-Y=0
-W=(#BoxSize# + #BoxLeftMargin# + #BoxRightMargin#)
+Y=0r
+W=(#BoxWidth# + #BoxLeftMargin# + #BoxRightMargin#)
 H=#DisplayToDisplayMargin#
 
 ;-----------------------------------------------------------------------------------------------------------------------
@@ -139,9 +145,18 @@ StringAlign=Right
 NumOfDecimals=1
 AutoScale=1
 
-[MyRainmeterGraph]
+[MyRainmeterBar]
 X=(#BoxLeftMargin# + #DisplayToDisplayMargin#)
 Y=#DisplayToDisplayMargin#r
+H=#BarHeight#
+W=#BoxContentWidth#
+BarColor=#BarActiveColor#
+SolidColor=#BarBackColor#
+BarOrientation=Horizontal
+
+[MyRainmeterGraph]
+X=(#BoxLeftMargin# + #DisplayToDisplayMargin#)
+Y=#DisplayToDisplayMargin#
 H=#GraphHeightSmall#
 W=#BoxContentWidth#
 GraphStart=#Direction#
@@ -152,14 +167,11 @@ LineCount=1
 AntiAlias=0
 DynamicVariables=1
 
-[MyRainmeterBar]
-X=(#BoxLeftMargin# + #DisplayToDisplayMargin#)
-Y=#DisplayToDisplayMargin#r
+[MyRainmeterBarGraph]
+X=0r
+Y=0r
 H=#BarHeight#
 W=#BoxContentWidth#
-BarColor=#BarActiveColor#
-SolidColor=#BarBackColor#
-BarOrientation=Horizontal
 
 ;-----------------------------------------------------------------------------------------------------------------------
 ;-- Classes for "Bar" meters
@@ -184,7 +196,7 @@ StringAlign=Center
 
 [MyRainmeterTitleStringGraphBottomCentered]
 X=0r
-Y=(#DisplayToDisplayMargin# + #FontOffset# + #GraphHeightSmall#)
+Y=(#DisplayToDisplayMargin# + #FontOffset# + #GraphHeight#)
 StringAlign=Center
 
 [MyRainmeterDataStringBarLeft]
@@ -194,12 +206,6 @@ StringAlign=Left
 
 ;-----------------------------------------------------------------------------------------------------------------------
 ;-- Classes for "GraphAndBarCondensed" meters
-
-[MyRainmeterGraphCondensed]
-X=0r
-Y=0r
-H=#BarHeight#
-W=#BoxContentWidth#
 
 [MyRainmeterTitleStringGraphAndBarCondensed]
 Y=(#BarHeight# + #BarTextMargin#)r

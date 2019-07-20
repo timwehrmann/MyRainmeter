@@ -1,6 +1,6 @@
 [Variables]
 ;-----------------------------------------------------------------------------------------------------------------------
-;-- SpeedFan IDs#
+;-- SpeedFan IDs
 Drive1 = C:
 DriveType1 = SSD
 Drive1MaxMB = 544
@@ -13,79 +13,6 @@ Drive3MaxMB = 562
 Drive4 = P:
 DriveType4 = SSD
 Drive4MaxMB = 562
-
-;-----------------------------------------------------------------------------------------------------------------------
-;-- Networks
-SpeedTestDL=94.4
-SpeedTestUL=33.31
-NetAVG=4
-FastNet=100
-
-;-----------------------------------------------------------------------------------------------------------------------
-;-- Colors (Temperature hue: 20 / 60 / 100 / 140 / 180 / 220 / 0)
-ClockColor = 0,0,0,100
-ClockShadowColor = 0,0,0,20
-ClockBackgroundColor = 0,0,0,32
-TitleColor = 255,255,255,140
-TextColor = 255,255,255,100
-LineColor = 255,255,255,25
-BarActiveColor=233,186,118,60
-BarBackColor = 233,186,118,40
-GraphBackColor = 233,186,118,20
-GraphSeparatorColor = 255,255,255,64
-BoxTitleColor = 255,255,255,255
-BoxBackgroundColor = 0,0,0,0
-FullsizeBoxBackgroundColor = 0,0,0,100
-TemperatureDefault = 255,255,255,128
-Temperature1 = 255,199,143,192
-Temperature2 = 199,255,143,192
-Temperature3 = 143,255,199,192
-Temperature4 = 143,199,255,192
-Temperature5 = 199,143,255,192
-Temperature6 = 255,143,199,192
-Temperature7 = 255,142,142,192
-DebugColor = 255,0,0,0
-
-;-----------------------------------------------------------------------------------------------------------------------
-;-- Fonts
-FontFamilyDate=ITC Avant Garde Pro XLt
-FontFamilyClock=ITC Avant Garde Pro Bk
-FontFamily = Myriad Pro
-FontSize = 8
-TitleFontCase = Upper
-TitleFontStyle = Bold
-AntiAlias=1
-
-;-----------------------------------------------------------------------------------------------------------------------
-;-- Widths / Heights / Margins / Paddings
-FontOffset = 3
-FontHeight = (#FontSize# + #FontOffset#)
-BoldOffset = 1
-BoxPadding = 10
-BoxContentWidth = 240
-BoxTopMargin = (#BoxPadding# + 5)
-BoxLeftMargin = (#BoxPadding# + 5)
-BoxRightMargin = (#BoxPadding# + 5)
-BarTextMargin = (#FontOffset# + (#BoxPadding# / 2))
-DisplayToDisplayMargin = #BoxPadding#
-RowText = (#BoxPadding# + #FontSize#)
-RowBarGraph = (#BarHeight# + #BarTextMargin# + #FontHeight# + #BoxPadding#)
-
-;-----------------------------------------------------------------------------------------------------------------------
-;-- Graph settings
-Direction = Left
-GraphHeight = 129
-GraphHeightSmall = 44
-
-;-----------------------------------------------------------------------------------------------------------------------
-;-- Bar settings
-BarHeight = 30
-BarPadding = 4
-
-;-----------------------------------------------------------------------------------------------------------------------
-;-- Temperatures min and max values
-minTemp=0
-maxTemp=80
 
 ;-----------------------------------------------------------------------------------------------------------------------
 ;-- HWiNFO IDs
@@ -118,16 +45,108 @@ Drive4SensorInstance=0x2
 Drive4EntryId=0x1000001
 
 ;-----------------------------------------------------------------------------------------------------------------------
-;-- Box settings
-BoxSize=(#BoxContentWidth# + #BoxPadding# * 2)
-BoxFullsizeWidth=(#BoxSize# + #BoxLeftMargin# + #BoxRightMargin#)
-BoxPaddingWithTitle = (#BoxPadding# * 2 + #FontSize# + #BoxPadding# + 1)
-BoxHeightDrives=(#BoxPaddingWithTitle# + #RowBarGraph# * 4)
-BoxHeightSystem=(#BoxPaddingWithTitle# + #RowText# * 2 + #RowBarGraph# * 2)
-BoxHeightText=(#BoxPaddingWithTitle# + #RowText# * 5)
-BoxHeightNetwork=(#BoxPaddingWithTitle# + #RowText# * 2 + #RowBarGraph# * 2)
-BoxHeightTemperature=(#BoxPaddingWithTitle# + #BoxPadding# + #GraphHeight# + #RowText# * 7)
+;-- Networks
+SpeedTestDL=94.4
+SpeedTestUL=33.31
+NetAVG=4
+FastNet=100
 
 ;-----------------------------------------------------------------------------------------------------------------------
-;-- Date and Clock settings
+;-- Temperatures min and max values
+minTemp=0
+maxTemp=80
+
+;-----------------------------------------------------------------------------------------------------------------------
+;-- Widths / Heights / Margins / Paddings
+BoxContentWidth = 241
+BoxPadding = 10
+BoxTopMargin = (#BoxPadding# + 5)
+BoxLeftMargin = 0
+BoxRightMargin = 0
+BarHeight = 30
+BarPadding = 4
+GraphHeight = 129
+FontOffset = 3
+BoldOffset = 1
+BarTextMargin = (#FontOffset# + (#BoxPadding# / 2))
+
+;-----------------------------------------------------------------------------------------------------------------------
+;-- Colors (Temperature hue: 20 / 60 / 100 / 140 / 180 / 220 / 0)
+ClockColor = 0,0,0,100
+ClockShadowColor = 0,0,0,20
+ClockBackgroundColor = 0,0,0,32
+TitleColor = 255,255,255,140
+TextColor = 255,255,255,100
+LineColor = 255,255,255,25
+BarActiveColor=233,186,118,60
+BarBackColor = 233,186,118,40
+GraphBackColor = 233,186,118,20
+GraphSeparatorColor = 255,255,255,64
+BoxTitleColor = 255,255,255,255
+BoxBackgroundColor = 0,0,0,255
+FullsizeBoxBackgroundColor = 0,0,0,100
+ElementBackgroundColor = 0,255,0,0
+MarginBackgroundColor = 255,0,0,0
+TemperatureDefault = 255,255,255,128
+Temperature1 = 255,199,143,192
+Temperature2 = 199,255,143,192
+Temperature3 = 143,255,199,192
+Temperature4 = 143,199,255,192
+Temperature5 = 199,143,255,192
+Temperature6 = 255,143,199,192
+Temperature7 = 255,142,142,192
+
+;-----------------------------------------------------------------------------------------------------------------------
+;-- Fonts
+FontFamilyDate=ITC Avant Garde Pro XLt
+FontFamilyClock=ITC Avant Garde Pro Bk
+FontFamily = Myriad Pro
+FontSize = 8
+TitleFontCase = Upper
+TitleFontStyle = Bold
+AntiAlias=1
+Direction = Left
+
+;-----------------------------------------------------------------------------------------------------------------------
+;-- Box settings
+BoxFullsizeEnabled = 1
+
+DriveBoxTitleEnabled = 1
+DriveBoxAmountOfBarGraphMeters = 4
+DriveBoxAmountOfGraphMeters = 0
+DriveBoxAmountOfTextMeters = 0
+
+NetworkBoxTitleEnabled = 1
+NetworkBoxAmountOfBarGraphMeters = 2
+NetworkBoxAmountOfGraphMeters = 0
+NetworkBoxAmountOfTextMeters = 2
+
+SystemBoxTitleEnabled = 1
+SystemBoxAmountOfBarGraphMeters = 2
+SystemBoxAmountOfGraphMeters = 0
+SystemBoxAmountOfTextMeters = 2
+
+TemperatureBoxTitleEnabled = 1
+TemperatureBoxAmountOfBarGraphMeters = 0
+TemperatureBoxAmountOfGraphMeters = 1
+TemperatureBoxAmountOfTextMeters = 7
+
+;-----------------------------------------------------------------------------------------------------------------------
+;-- Auto-generated values
+
+FontHeight = (#FontSize# + #FontOffset#)
+DisplayToDisplayMargin = #BoxPadding#
+BoxWidth=(#BoxContentWidth# + #BoxPadding# * 2)
+BoxFullsizeWidth=(#BoxWidth# + #BoxLeftMargin# + #BoxRightMargin#) * #BoxFullsizeEnabled#
+
+BoxTitleHeight = (#BoxPadding# + #FontSize# + #BoxPadding# + 1)
+BarGraphMeterHeight = (#DisplayToDisplayMargin# + #BarHeight# + #BarTextMargin# + #FontHeight#)
+GraphMeterHeight = (#DisplayToDisplayMargin# + #GraphHeight#)
+TextMeterHeight = (#BoxPadding# + #FontSize#)
+
+BoxHeightDrives=(#DriveBoxTitleEnabled# * #BoxTitleHeight#) + (#DriveBoxAmountOfBarGraphMeters# * #BarGraphMeterHeight#) + (#DriveBoxAmountOfGraphMeters# * #GraphMeterHeight#) + (#DriveBoxAmountOfTextMeters# * #TextMeterHeight#) + #BoxPadding#
+BoxHeightNetwork=(#NetworkBoxTitleEnabled# * #BoxTitleHeight#) + (#NetworkBoxAmountOfBarGraphMeters# * #BarGraphMeterHeight#) + (#NetworkBoxAmountOfGraphMeters# * #GraphMeterHeight#) + (#NetworkBoxAmountOfTextMeters# * #TextMeterHeight#) + #BoxPadding#
+BoxHeightSystem=(#SystemBoxTitleEnabled# * #BoxTitleHeight#) + (#SystemBoxAmountOfBarGraphMeters# * #BarGraphMeterHeight#) + (#SystemBoxAmountOfGraphMeters# * #GraphMeterHeight#) + (#SystemBoxAmountOfTextMeters# * #TextMeterHeight#) + #BoxPadding#
+BoxHeightTemperature=(#TemperatureBoxTitleEnabled# * #BoxTitleHeight#) + (#TemperatureBoxAmountOfBarGraphMeters# * #BarGraphMeterHeight#) + (#TemperatureBoxAmountOfGraphMeters# * #GraphMeterHeight#) + (#TemperatureBoxAmountOfTextMeters# * #TextMeterHeight#) + #BoxPadding#
+
 ClockTimeWidth = (#WORKAREAWIDTH# / 2 - #BoxFullsizeWidth#)
