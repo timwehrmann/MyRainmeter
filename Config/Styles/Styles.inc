@@ -157,7 +157,7 @@ BarOrientation=Horizontal
 [MyRainmeterGraph]
 X=(#BoxLeftMargin# + #DisplayToDisplayMargin#)
 Y=#DisplayToDisplayMargin#
-H=#GraphHeightSmall#
+H=#GraphHeight#
 W=#BoxContentWidth#
 GraphStart=#Direction#
 SolidColor=#GraphBackColor#
