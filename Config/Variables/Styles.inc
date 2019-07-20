@@ -1,21 +1,25 @@
 [Variables]
 ;-----------------------------------------------------------------------------------------------------------------------
-;-- Colors (Temperature hue: 20 / 60 / 100 / 140 / 180 / 220 / 0)
-ClockColor = 0,0,0,100
-ClockShadowColor = 0,0,0,20
+;-- Colors
+ClockColor = 255,255,255,160
+ClockShadowColor = 0,0,0,40
 ClockBackgroundColor = 0,0,0,32
+BoxTitleColor = 255,255,255,255
 TitleColor = 255,255,255,140
 TextColor = 255,255,255,100
 LineColor = 255,255,255,25
-BarActiveColor=233,186,118,60
-BarBackColor = 233,186,118,40
-GraphBackColor = 233,186,118,20
+
+BarActiveColor = 107,141,176,80
+BarBackColor = 107,141,176,60
+GraphBackColor = 107,141,176,40
+
 GraphSeparatorColor = 255,255,255,64
-BoxTitleColor = 255,255,255,255
-BoxBackgroundColor = 0,0,0,255
+BoxBackgroundColor = 0,0,0,0
 FullsizeBoxBackgroundColor = 0,0,0,100
 ElementBackgroundColor = 0,255,0,0
 MarginBackgroundColor = 255,0,0,0
+
+; Hue (degree on color circle) for getting these temperature graph color values: 20 / 60 / 100 / 140 / 180 / 220 / 0
 TemperatureDefault = 255,255,255,128
 Temperature1 = 255,199,143,192
 Temperature2 = 199,255,143,192
