@@ -1,7 +1,7 @@
 [Variables]
 ;-----------------------------------------------------------------------------------------------------------------------
 ;-- PerfMon IDs (MaxMB can be found out by using #TODO)
-Drive1 = C
+Drive1 = C:
 Drive1MaxMB = 544
 Drive2 = D:
 Drive2MaxMB = 177
