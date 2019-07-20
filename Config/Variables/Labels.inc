@@ -1,4 +1,9 @@
 [Variables]
+DriveType1 = SSD
+DriveType2 = HDD
+DriveType3 = SSD
+DriveType4 = SSD
+
 BoxTitleTitleDrives = Laufwerke
 BoxTitleTitleSystemload = System
 BoxTitleSystemInformation = Systeminformationen
