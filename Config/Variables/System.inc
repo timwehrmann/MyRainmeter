@@ -2,13 +2,20 @@
 ;-----------------------------------------------------------------------------------------------------------------------
 ;-- PerfMon IDs (MaxMB can be found out by using #TODO)
 Drive1 = C:
+Drive1Type = SSD
 Drive1MaxMB = 544
 Drive2 = D:
+Drive2Type = HDD
 Drive2MaxMB = 177
 Drive3 = E:
+Drive3Type = SSD
 Drive3MaxMB = 562
 Drive4 = P:
+Drive4Type = SSD
 Drive4MaxMB = 562
+Drive5 = G:
+Drive5Type = SSD
+Drive5MaxMB = 562
 
 ;-----------------------------------------------------------------------------------------------------------------------
 ;-- HWiNFO IDs
@@ -39,6 +46,9 @@ Drive3EntryId=0x1000001
 Drive4SensorId=0xf0000100
 Drive4SensorInstance=0x2
 Drive4EntryId=0x1000001
+Drive5SensorId=0xf0000100
+Drive5SensorInstance=0x4
+Drive5EntryId=0x1000001
 
 ;-----------------------------------------------------------------------------------------------------------------------
 ;-- Networks
