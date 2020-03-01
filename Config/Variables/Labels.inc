@@ -5,6 +5,7 @@ BoxTitleSystemInformation = Systeminformationen
 BoxTitleTemperatures = Temperaturen
 BoxTitleNetworkLoad = Netzwerkauslastung
 LabelProcessor=Prozessor
+LabelGpu=Grafikkarte
 LabelRam=Ram
 LabelDownstream=Downstream
 LabelUpstream=Upstream

@@ -19,6 +19,15 @@ Drive5MaxMB = 562
 
 ;-----------------------------------------------------------------------------------------------------------------------
 ;-- HWiNFO IDs
+GPUCoreLoadSensorId=0xe0002000
+GPUCoreLoadSensorInstance=0x0
+GPUCoreLoadEntryId=0x7000000
+CPUCoreLoadSensorId=0xf0000300
+CPUCoreLoadSensorInstance=0x0
+CPUCoreLoadEntryId=0x7000009
+RAMCoreLoadSensorId=0xf0000301
+RAMCoreLoadSensorInstance=0x0
+RAMCoreLoadEntryId=0x8000005
 CurrentDownloadSensorId=0xf000ea00
 CurrentDownloadSensorInstance=0x0
 CurrentDownloadEntryId=0x8000002

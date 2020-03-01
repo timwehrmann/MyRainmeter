@@ -200,6 +200,10 @@ NumOfDecimals=0
 Percentual=1
 Text="%1%"
 
+[MyRainmeterDataStringRealPercentual]
+NumOfDecimals=0
+Text="%1 %"
+
 [MyRainmeterDataStringTwoBytes]
 AutoScale=1
 NumOfDecimals=1
