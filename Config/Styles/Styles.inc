@@ -121,10 +121,12 @@ H=#DisplayToDisplayMargin#
 ;-----------------------------------------------------------------------------------------------------------------------
 ;--- Generic classes
 
-[MyRainmeterTitleString]
+[MyRainmeterTitleCol]
 X=(#BoxLeftMargin# + #DisplayToDisplayMargin#)
 Y=0r
 H=#FontHeight#
+
+[MyRainmeterTitleString]
 FontFace=#FontFamily#
 FontSize=#FontSize#
 FontColor=#TitleColor#
@@ -133,15 +135,17 @@ StringStyle=#TitleFontStyle#
 StringCase=#TitleFontCase#
 UpdateDivider=-1
 
-[MyRainmeterDataString]
+[MyRainmeterDataCol]
 X=#BoxContentWidth#r
 Y=0r
 H=#FontHeight#
-FontFace=#FontFamily#
-FontColor=#TextColor#
-FontSize=#FontSize#
-AntiAlias=#AntiAlias#
 StringAlign=Right
+
+[MyRainmeterDataString]
+FontFace=#FontFamily#
+FontSize=#FontSize#
+FontColor=#TextColor#
+AntiAlias=#AntiAlias#
 NumOfDecimals=1
 AutoScale=1
 
@@ -196,12 +200,29 @@ NumOfDecimals=0
 Percentual=1
 Text="%1%"
 
-[MyRainmeterDataStringBytes]
+[MyRainmeterDataStringTwoBytes]
+AutoScale=1
 NumOfDecimals=1
 Text="%1B / %2B"
 
+[MyRainmeterDataStringBytes]
+AutoScale=1
+NumOfDecimals=1
+Text="%1B"
+
 [MyRainmeterDataStringBytesSecond]
+AutoScale=1
 Text="%1B/s"
+
+[MyRainmeterDataStringFreeBytes]
+AutoScale=1
+Text="%1B #LabelFree#"
+Case=Lower
+
+[MyRainmeterDataStringTotalBytes]
+AutoScale=1
+Text="#LabelOfTotal# %1B"
+Case=Lower
 
 ;-----------------------------------------------------------------------------------------------------------------------
 ;-- Classes for "Temperature" meter
