@@ -214,15 +214,9 @@ Text="%1B"
 AutoScale=1
 Text="%1B/s"
 
-[MyRainmeterDataStringFreeBytes]
+[MyRainmeterDataStringBytesWithFree]
 AutoScale=1
-Text="%1B #LabelFree#"
-Case=Lower
-
-[MyRainmeterDataStringTotalBytes]
-AutoScale=1
-Text="#LabelOfTotal# %1B"
-Case=Lower
+Text="%1B / %2B #LabelFree#"
 
 ;-----------------------------------------------------------------------------------------------------------------------
 ;-- Classes for "Temperature" meter

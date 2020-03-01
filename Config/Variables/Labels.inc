@@ -13,7 +13,7 @@ LabelUptime=Hochgefahren seit
 LabelInternalIP=Interne IP
 LabelExternalIP=Externe IP
 LabelPing=Aktueller Ping
-LabelFree=Frei
+LabelFree=frei
 
 January=Januar
 February=Februar
